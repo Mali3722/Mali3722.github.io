@@ -54,7 +54,7 @@ header {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-header img {
+#logo {
     width: 130px;
     height: auto;
     float: left;
