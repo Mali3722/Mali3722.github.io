@@ -54,11 +54,6 @@ header {
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-#logo {
-    width: 15px;
-    height: 15px;
-    float: left;
-}
 nav {
     text-align: center;
     background-color: #A1DADD;
