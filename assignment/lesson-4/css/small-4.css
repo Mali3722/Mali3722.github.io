@@ -11,7 +11,7 @@ h1 {
     font-size: 30px;
     text-align: center;
     font-family: Arial, Helvetica, sans-serif; 
-    color: #white; 
+    color: white; 
 }
 
 h2 {
@@ -31,7 +31,7 @@ p {
     font-size: 16px; 
     text-align: left;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: #154C87
+    color: white;
 }
 
 header, nav, main, footer {
@@ -55,13 +55,13 @@ header {
 }
 
 #logo {
-    width: 5em;
+    width: 250px;
     float: left;
 }
 nav {
     text-align: center;
     background-color: #A1DADD;
-    color: #070707;
+    
 }
 footer {
     font-size: 16px; 
