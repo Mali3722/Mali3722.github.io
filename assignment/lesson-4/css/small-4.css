@@ -35,6 +35,7 @@ header, nav, main, footer {
 }
 #logo {
     width: 5em;
+    height: 5em;
     float: left;
     }
 
