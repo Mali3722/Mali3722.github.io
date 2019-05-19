@@ -33,7 +33,10 @@ header, nav, main, footer {
     max-width: 1000px;
 
 }
-
+#logo {
+    width: 5em;
+    }
+    
 header, 
 footer, 
 footer a {
@@ -48,6 +51,7 @@ header {
 }
 
 nav {
+
     text-align: center;
     background-color: #A1DADD;
     
