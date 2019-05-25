@@ -1,4 +1,4 @@
-@media only screen and (max-width: 1000px){
+@media screen and (max-width: 1000px){
     .navigation li:first-child{display: inline;}
     .navigation li {display: inline; margin-right: 1rem;}
     .navigation li a {color: yellow;}
