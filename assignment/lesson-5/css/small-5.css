@@ -57,6 +57,7 @@ header, nav, main, footer {
 nav {
     text-align: center;
     background-color: #A1DADD;
+    word-spacing: 2em;
 }
 li {
     display: inline;
