@@ -58,15 +58,9 @@ header, nav, main, footer {
 nav { margin: 0 auto; max-width: 760px; background-color: #A1DADD; }
     .navigation { list-style: none; text-align: center; }
     .navigation li:first-child {display: block;}
-    .navigation li {display: none;}
+    .navigation li {display: inline;}
     .navigation a{display:block; color:black; padding: .75rem; text-align: center; text-decoration: none;}
     .navigation a:hover {color:#fff; background-color: rgba(97, 8, 38, 0.534); font-weight: 700;
-    }
-
-    li {
-    display: inline;
-
-    
 }
 footer {
     text-align: center;
