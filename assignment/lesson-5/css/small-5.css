@@ -57,10 +57,10 @@ header, nav, main, footer {
 nav {
     text-align: center;
     background-color: #A1DADD;
-    word-spacing: 5em;
-}
+    }
 li {
     display: inline;
+    word-spacing: 5em;
 }
 footer {
     text-align: center;
