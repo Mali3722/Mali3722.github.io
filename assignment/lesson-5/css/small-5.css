@@ -32,11 +32,10 @@ header, nav, main, footer {
 
 }
 #logo {
-    width: .5em;
-    height: .5em;
+    width: 1em;
+    height: 1em;
     float: left;
-    padding: .5em;
-    }
+}
 
 header {
     text-align: center;
