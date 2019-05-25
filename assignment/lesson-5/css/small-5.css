@@ -11,6 +11,15 @@ header {
     border: 1px solid #bbb;
     box-shadow: 0 0 30px #777;
 }
+
+#logo {
+    display: inline-block;
+    width: 1em;
+    height: 1em;
+    vertical-align: middle;
+    margin: 10px;
+}
+
 h1 {
     font-size: 30px;
     text-align: center;
@@ -44,13 +53,7 @@ header, nav, main, footer {
     max-width: 1000px;
     
 
-}
-#logo {
-    width: 1em;
-    height: 1em;
-    float: left;
-    border: 1em;
-}
+
 
 nav {
 
