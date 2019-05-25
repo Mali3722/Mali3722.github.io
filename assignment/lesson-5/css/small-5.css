@@ -14,10 +14,10 @@ header {
 }
 
 #logo {
-    display: inline-block;
+    display: block;
+    float: left;
     width: 1em;
     height: 1em;
-    box-align: left;
     margin: 10px;
 }
 
