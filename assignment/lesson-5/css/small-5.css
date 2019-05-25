@@ -39,6 +39,7 @@ header, nav, main, footer {
     width: 1em;
     height: 1em;
     float: left;
+    border: 1em;
 }
 
 header {
