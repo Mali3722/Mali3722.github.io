@@ -62,9 +62,8 @@ nav { margin: 0 auto; max-width: 760px; background-color: #A1DADD; }
     .navigation a{display:block; color:black; padding: .75rem; text-align: center; text-decoration: none;}
     .navigation a:hover {color:#fff; background-color: rgba(97, 8, 38, 0.534); font-weight: 700;
     }
-.resposive li{display: block;}
 
-li {
+    li {
     display: inline;
 
     
