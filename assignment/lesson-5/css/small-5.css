@@ -17,7 +17,7 @@ header {
     display: inline-block;
     width: 1em;
     height: 1em;
-    align: left;
+    box-align: left;
     margin: 10px;
 }
 
