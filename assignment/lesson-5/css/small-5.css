@@ -57,7 +57,9 @@ header, nav, main, footer {
 nav {
     text-align: center;
     background-color: #A1DADD;
-    
+}
+li {
+    display: inline;
 }
 footer {
     text-align: center;
