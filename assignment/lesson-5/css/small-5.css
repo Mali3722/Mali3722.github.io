@@ -27,25 +27,21 @@ h1 {
     font-family: Arial, Helvetica, sans-serif; 
     color: white; 
 }
-#townpic {
-    display: block;
-    float: center;
-    width:
-}
+
 h2 {
     text-align: center;
    }
 .herodiv {
     margin: 10px auto;
     position: relative;
-    border: 1px dashed cyan;
+    border: 1px solid #154C87;
     width: 100%x;
     height: 250px;
 
 }
 .hero-ph {
     margin: 10px, auto;
-    background-color: #eee;
+    background-color: #154C87;
     border: 1px solid #333;
     width: 960px;
     height: 300px;
