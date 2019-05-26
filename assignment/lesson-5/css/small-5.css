@@ -27,7 +27,11 @@ h1 {
     font-family: Arial, Helvetica, sans-serif; 
     color: white; 
 }
-
+#townpic {
+    display: block;
+    float: center;
+    width:
+}
 h2 {
     text-align: center;
    }
@@ -55,7 +59,7 @@ h2 {
     border: 1px, solid green;
     padding: 5rem;
     box-shadow: 0 0 30px #777;
-    
+
 }
 
 
