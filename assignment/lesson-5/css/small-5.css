@@ -35,17 +35,17 @@ h2 {
     font-size: 2rem; 
     text-shadow: 3px 3px 5px #777;
    }
+.town {
+    width: 500px;
+}
 .herodiv2 {
     margin: 10px auto;
     position: relative;
     border: 1px solid #154C87;
     width: 1000px;
     height: 250px;
+}
 
-}
-.town {
-    width: 500px;
-}
 .weathersummary {
     position: absolute;
     top: 50px;
@@ -67,7 +67,7 @@ p {
     font-size: 16px; 
     text-align: center;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: white;
+    color: black;
 }
 
 header, nav, main, footer {
