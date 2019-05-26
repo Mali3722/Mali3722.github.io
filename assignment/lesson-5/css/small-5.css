@@ -29,12 +29,38 @@ h1 {
 }
 
 h2 {
-    font-size: 25px; 
     text-align: center;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #154C87;
+   }
+.herodiv {
+    margin: 10px auto;
+    position: relative;
+    border: 1px dashed cyan;
+    width: 100%x;
+    height: 250px;
+
 }
-h3 {
+.hero-ph {
+    margin: 10px, auto;
+    background-color: #eee;
+    border: 1px solid #333;
+    width: 960px;
+    height: 300px;
+}
+
+.weathersummary {
+    position: absolute;
+    top: 50px;
+    left: 50px;
+    background: radial-gradient (pink);
+    border: 1px, solid green;
+    padding: 5rem;
+    box-shadow: 0 0 30px #777;
+    
+}
+
+
+
+    h3 {
     font-size: 20px; 
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
@@ -63,6 +89,7 @@ nav { margin: 0 auto; max-width: 760px; background-color: #A1DADD; }
     .navigation a:hover {color:#fff; background-color: rgba(97, 8, 38, 0.534); font-weight: 700;
 }
 .responsive li {display: block;}
+.active {display: inline;color: #154C87} 
 
 footer {
     text-align: center;
