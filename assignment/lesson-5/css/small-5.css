@@ -55,16 +55,13 @@ h2 {
     position: absolute;
     top: 50px;
     left: 50px;
-    background: radial-gradient (pink);
-    border: 1px, solid green;
+    background: radial-gradient (#154C87);
+    border: 1px, solid navy;
     padding: 5rem;
     box-shadow: 0 0 30px #777;
-
 }
 
-
-
-    h3 {
+h3 {
     font-size: 20px; 
     text-align: center;
     font-family: Arial, Helvetica, sans-serif;
