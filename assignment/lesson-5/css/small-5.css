@@ -39,11 +39,15 @@ h2 {
     margin: 10px auto;
     position: relative;
     border: 1px solid #154C87;
-    width: 100%x;
+    width: 100%;
     height: 250px;
 
 }
-
+#img {
+    margin: 10px auto;
+    position: relative;
+    width: 100%;    
+}
 .weathersummary {
     position: absolute;
     top: 50px;
