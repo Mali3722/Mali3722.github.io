@@ -38,12 +38,10 @@ h2 {
     width: 90%;
     margin: auto;
 }
-.herodiv2 {
-    margin: 10px auto;
+.herodiv {
     position: relative;
-    border: 1px solid #154C87;
-    width: 1000px;
-    height: 250px;
+    width: fit-content;
+    margin: auto;
 }
 
 .weathersummary {
