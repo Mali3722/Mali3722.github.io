@@ -84,6 +84,11 @@ nav { margin: 0 auto; max-width: 1000px; background-color: #A1DADD; }
 .responsive li {display: block;}
 .active {display: inline;color: #154C87} 
 
+.five {
+    border-block: black;
+    text-align: center;
+    display: block;
+}
 footer {
     margin: auto;
     padding: .5rem;
