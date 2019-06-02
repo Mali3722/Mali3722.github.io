@@ -9,6 +9,8 @@ header {
     background-color: #154C87;
     color: white;
     margin: 0px;
+    padding: .5rem;
+    max-width: 1000px;
     box-shadow: 0 0 30px #777;
 }
 
@@ -26,8 +28,10 @@ h1 {
     font-family: Arial, Helvetica, sans-serif; 
     color: white; 
 }
+
 main {
-    max-width: 820px; margin:0 auto;
+    max-width: 1000px; 
+    margin:0 auto;
 }
 h2 {
     text-align: center; 
@@ -49,7 +53,6 @@ h2 {
     top: 20px;
     left: 50px;
     background: radial-gradient(#eee,#154C87);
-    border: 1px solid, navy;
     padding: 2rem;
     box-shadow: 0 0 30px #777;
 }
@@ -68,14 +71,10 @@ p {
     color: black;
 }
 
-header, nav, main, footer {
-    margin: auto;
-    padding: .5rem;
-    max-width: 1000px;
-    text-align: center;
-}    
+  
 
-nav { margin: 0 auto; max-width: 760px; background-color: #A1DADD; }
+nav { margin: 0 auto; max-width: 1000px; background-color: #A1DADD; }
+
     .navigation { list-style: none; text-align: center; }
     .navigation li:first-child {display: block;}
     .navigation li {display: none;}
@@ -86,6 +85,9 @@ nav { margin: 0 auto; max-width: 760px; background-color: #A1DADD; }
 .active {display: inline;color: #154C87} 
 
 footer {
+    margin: auto;
+    padding: .5rem;
+    max-width: 90%
     text-align: center;
     font-size: 16px; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
