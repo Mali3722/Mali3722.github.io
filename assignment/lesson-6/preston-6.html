@@ -36,7 +36,14 @@
 
         <h2>Preston Idaho</h2>
         <div class="herodiv">
-            <img class="town" src="images/cit230_image_franklinOriginal-(1).jpg" alt="Preston Idaho">
+            <picture>
+                <img srcset="320_preston.jpg 320w,
+                         480_preston.jpg 480w,
+                         800_preston.jpg 800w" sizes="(maxwidth:320px) 280px,
+                           (max-width: 480px)440px,
+                           800px" src="images/320_preston.jpg" alt="Preston Idaho">
+            </picture>
+
             <section class="weathersummary">
                 <h3>Weather Summary</h3>
                 <p>Currently: Sunny</p>
@@ -68,22 +75,22 @@
         </section>
         <article>
             <div class="founders">
-                <img class="fire" srcset=""> 
+                <img class="fire" srcset="">
                 <section class="story">
-                <h3>Founders Day Fresco</h3>
-                <h4>by Janica Juarez</h4>
-                <p>I was recently reflecting upong the founders day event held at<br>
-                    Foundation Park each year. I have been taking the frestival for<br>
-                    granted and have not been propertly engaging in perhaps the most<br>
-                    popular community event of the year. In response, I contacted Ms.<br>
-                    Sharon via email and expressed my desire to serve on the event<br>
-                    committee. Well, you guessed it, the phone rings almost<br>
-                    immediately and she promptly asks me to be teh event<br>
-                    committe chair. Literally, good grief! My apprecation for the<br>
-                    years of dedicated, generouse servie of volunteers and sponsers<br>
-                    has escalated beyond what I thougth I could feel for such a thing<br>
-                    and...
-                </p>
+                    <h3>Founders Day Fresco</h3>
+                    <h4>by Janica Juarez</h4>
+                    <p>I was recently reflecting upong the founders day event held at<br>
+                        Foundation Park each year. I have been taking the frestival for<br>
+                        granted and have not been propertly engaging in perhaps the most<br>
+                        popular community event of the year. In response, I contacted Ms.<br>
+                        Sharon via email and expressed my desire to serve on the event<br>
+                        committee. Well, you guessed it, the phone rings almost<br>
+                        immediately and she promptly asks me to be teh event<br>
+                        committe chair. Literally, good grief! My apprecation for the<br>
+                        years of dedicated, generouse servie of volunteers and sponsers<br>
+                        has escalated beyond what I thougth I could feel for such a thing<br>
+                        and...
+                    </p>
                 </section>
                 <section id="map">
                     <h3>Southern Idaho Weather</h3>
@@ -98,8 +105,10 @@
         </article>
     </main>
     <footer>
-        &copy; Southern Idaho Weather | Attributions | Brook Phipps | Wednesday, 20 May 2020
-        <script src="js/todaysdatejs-6">onload="todaysdate()"</script>    
+        <p>&copy; Southern Idaho Weather | Attributions | Brook Phipps |</p>
+        <p>
+            <script src="js/todaysdatejs-6">onload = "todaysdate()"</script>
+        </p>
     </footer>
 </body>
 
