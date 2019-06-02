@@ -1,5 +1,6 @@
 body {
     background: white;
+    box-sizing: border-box;
 }
 header {
     text-align: center;
@@ -46,7 +47,7 @@ h2 {
 
 .weathersummary {
     position: absolute;
-    top: 50px;
+    top: 20px;
     left: 50px;
     background: radial-gradient(#eee,#154C87);
     border: 1px solid, navy;
