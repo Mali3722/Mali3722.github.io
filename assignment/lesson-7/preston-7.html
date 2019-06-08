@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southern Idaho Weather</title>
+    <meta name="description" content="Southern_Idho_Weather_Preston, Idaho weather information">
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/small-6.css">
+    <link rel="stylesheet" href="css/large-6.css">
+    <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <img id="logo" src="images/sun.png" alt="Sun Logo">
+        <section class="headings">
+            <h1>Southern Idaho Weather</h1>
+            <h2>Where the sun goes to play!</h2>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="#">Home</a></li>
+            <li class="active"><a href="#">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="#">Storm Center</a></li>
+            <li><a href="#">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <h2>Preston Idaho</h2>
+        <div class="herodiv">
+            <picture>
+                <img srcset="320_preston.jpg 320w,
+                         480_preston.jpg 480w,
+                         800_preston.jpg 800w" sizes="(max-width:320px) 280px,
+                           (max-width: 480px)440px,
+                           800px" src="images/320_preston.jpg" alt="Preston Idaho">
+            </picture>
+
+            <section class="weathersummary">
+                <h3>Weather Summary</h3>
+                <p>Currently: Sunny</p>
+                <p>High: 76F</p>
+                <p>Windchill: 78F</p>
+                <p>Humidity 69%</p>
+                <p>Wind Speed: 5 mph</p>
+            </section>
+        </div>
+
+        <section>
+            <h2>5 Day Forcast</h2>
+            <table class="five">
+                <tr>
+                    <th>Wed</th>
+                    <th>Thur</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                </tr>
+                <tr>
+                    <td>89°F</td>
+                    <td>87°F</td>
+                    <td>78°F</td>
+                    <td>75°F</td>
+                    <td>72°F</td>
+                </tr>
+            </table>
+        </section>
+        <article>
+            <div class="founders">
+                <img class="fire" srcset="">
+                <section class="story">
+                    <h3>Founders Day Fresco</h3>
+                    <h4>by Janica Juarez</h4>
+                    <p>I was recently reflecting upong the founders day event held at<br>
+                        Foundation Park each year. I have been taking the frestival for<br>
+                        granted and have not been propertly engaging in perhaps the most<br>
+                        popular community event of the year. In response, I contacted Ms.<br>
+                        Sharon via email and expressed my desire to serve on the event<br>
+                        committee. Well, you guessed it, the phone rings almost<br>
+                        immediately and she promptly asks me to be teh event<br>
+                        committe chair. Literally, good grief! My apprecation for the<br>
+                        years of dedicated, generouse servie of volunteers and sponsers<br>
+                        has escalated beyond what I thougth I could feel for such a thing<br>
+                        and...
+                    </p>
+                </section>
+                <section id="map">
+                    <h3>Southern Idaho Weather</h3>
+                    <p>30 N 1st<br>
+                        Preston, ID 83263
+                        999.999.9999<br>
+                        southernidahoweather@siw.com
+                    </p>
+
+                </section>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; Southern Idaho Weather | Attributions | Brook Phipps |</p>
+        <p>
+            <script src="js/todaysdatejs-6">onload = "todaysdate()"</script>
+        </p>
+    </footer>
+</body>
+
+</html> 
