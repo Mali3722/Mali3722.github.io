@@ -94,12 +94,6 @@ nav { margin: 0 auto; max-width: 1000px; background-color: #A1DADD; }
 
 }
 .active {display: inline;color: #154C87} 
-td {
-    border: black 1px solid;
-    margin: 0px;
-    
-}
-
 th {
      
     border: black 1px solid;
@@ -107,6 +101,13 @@ th {
     background-color:#154C87;
     color: white
 }
+
+td {
+    border: black 1px solid;
+    margin: 0px;
+   }
+
+
 
 .five {
     display: block;
@@ -121,6 +122,10 @@ th {
     p {
         color: black;
     }
+.map {
+    text-align: left;
+    color: black;
+}
 footer {
     margin: auto;
     padding: .5rem;
