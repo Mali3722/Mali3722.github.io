@@ -86,6 +86,13 @@ nav { margin: 0 auto; max-width: 1000px; background-color: #A1DADD; }
     .navigation a:hover {color:#fff; background-color: rgba(97, 8, 38, 0.534); font-weight: 700;
 }
 .responsive li {display: block;}
+
+.container {
+    display: block;
+    flex-direction: row;
+    margin: .5rem auto;
+    
+}
 .active {display: inline;color: #154C87} 
 td {
     border: black 1px solid;
