@@ -100,8 +100,10 @@ td, th {
 
 .founders {
     text-align: center;
-    
-}
+    }
+    p {
+        color: black;
+    }
 footer {
     margin: auto;
     padding: .5rem;
