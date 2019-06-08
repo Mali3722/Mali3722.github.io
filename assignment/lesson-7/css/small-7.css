@@ -44,9 +44,12 @@ h2 {
 }
 .herodiv {
     position: relative;
-    width: 100%;
+    width: fit-content;
     margin: auto;
 
+}
+.herodiv img{
+    width: 100%
 }
 
 .weathersummary {
