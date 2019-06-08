@@ -9,9 +9,9 @@ header {
     background-color: #154C87;
     color: white;
     margin: auto;
-    padding: 0;
+    padding: 1px;
     max-width: 1000px;
-    box-shadow: 0 0 30px #777;
+    box-shadow: 0 0 10px #777;
 }
 
 #logo {
