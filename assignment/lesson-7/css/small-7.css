@@ -118,13 +118,15 @@ td {
 
 .founders {
     text-align: center;
+    background-color: #A1DADD;
     }
-    p {
+p {
         color: black;
     }
 .map {
     text-align: left;
     color: black;
+    background-color: #A1DADD;
 }
 footer {
     margin: auto;
