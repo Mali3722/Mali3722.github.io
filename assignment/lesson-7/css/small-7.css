@@ -87,10 +87,18 @@ nav { margin: 0 auto; max-width: 1000px; background-color: #A1DADD; }
 }
 .responsive li {display: block;}
 .active {display: inline;color: #154C87} 
-td, th {
+td {
+    border: black 1px solid;
+    margin: 0px;
+    background-color:#154C87;
+}
+
+th {
+     
     border: black 1px solid;
     margin: 0px
 }
+
 .five {
     display: block;
     width: fit-content;
