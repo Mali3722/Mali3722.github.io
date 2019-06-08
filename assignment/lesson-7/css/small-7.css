@@ -98,7 +98,7 @@ nav { margin: 0 auto; max-width: 1000px; background-color: #A1DADD; }
 footer {
     margin: auto;
     padding: .5rem;
-    max-width: 1000;
+    max-width: 1000px;
     text-align: center;
     font-size: 16px; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
