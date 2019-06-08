@@ -91,19 +91,21 @@ nav { margin: 0 auto; max-width: 1000px; background-color: #A1DADD; }
     display: block;
     flex-direction: row;
     margin: .5rem auto;
-    
+
 }
 .active {display: inline;color: #154C87} 
 td {
     border: black 1px solid;
     margin: 0px;
-    background-color:#154C87;
+    
 }
 
 th {
      
     border: black 1px solid;
-    margin: 0px
+    margin: 0px;
+    background-color:#154C87;
+    color: white
 }
 
 .five {
@@ -129,4 +131,7 @@ footer {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #154C87;
     
+}
+p{
+    color: white;
 }
