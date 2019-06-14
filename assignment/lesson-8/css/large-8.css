@@ -1,0 +1,5 @@
+@media only screen and (min-width: 50em){
+    .navigation li:first-child{display: none; }
+    .navigation li {display: inline-block; margin-right: 11px;}
+    .navigation li a {color: rgb(31, 16, 29);}
+    }
