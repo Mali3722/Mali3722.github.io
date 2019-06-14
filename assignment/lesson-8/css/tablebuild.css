@@ -4,6 +4,8 @@ html {
 table {
     border: 1px; color: grey;
     text-align: center;
+    box-shadow: 10px 10px 5px #628ca6;
+    
 }
     
 }
@@ -11,7 +13,7 @@ thead {
     background-color:  #628ca6;
     color: black;
     font-weight: bold;
-    font-size: 18pt;
+    font-size: 22pt;
 }
 .months {
     text-align: center;
@@ -31,5 +33,6 @@ tfoot {
     background-color: #628ca6; 
       text-align: center;
       color: black;
+      font-size: 10pt;
   
 }
