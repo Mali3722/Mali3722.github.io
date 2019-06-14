@@ -11,10 +11,11 @@ thead {
     font-weight: bold;
     font-size: 18pt;
 }
-.headings {
-    background-color: #628ca6;
-    color: white;
-    font-size: 14pt;
+.months tr:nth-child(even) {
+    background-color:#e7ffed;
+}
+.months tr:nth-child(odd) {
+    background-color:#e7f0ed; 
 }
 #dollar {
     background-color: #628ca6;
@@ -23,4 +24,5 @@ thead {
 tfoot {
     background-color: #628ca6; 
     color: black;
+    text-align: center;
 }
