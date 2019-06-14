@@ -92,12 +92,6 @@ nav { margin: 0 auto; max-width: 1000px; background-color: #3fbdee; }
 }
 .responsive li {display: block;}
 
-.container {
-    display: block;
-    flex-direction: row;
-    margin: .5rem auto;
-
-}
 .active {display: inline;color: #003679} 
 th {
      
