@@ -2,56 +2,55 @@
 <form>
     <fieldset>
         <label>Full Name</label><br>
-        <input type="text" name="full name" minlength="5" pattern="[A-Za-z]" required >
-        
-    </p>
-    <p>
-        <label for="t2">Email</label><br>
-        <input type="email" id="t2"  name="email" placeholder="demo@email.com">
-        
-    </p>
-    <p>
-        <label>Phone Number</label><br>
-        <input type="tel" id="t3" name="phone number" required >
-        
-    </p>
-    <p>
-        <label>Zipcode</label><br>
-        <input type="number" id="t4" required name="zipcode">
-        
-    </p>
-    <p>
-        <label>Storm Date</label><br>
-        <input type="date" id="t5" name="storm date">
-        
-    </p>
-    <p>
-      <lable>Storm Type</lable><br> 
-       <input type="list" name="list" list="stormlist">
-        <datalist id="stormlist">
-            <option value="Flash Flood">
-            <option value="Hail">
-            <option value="Hurricane">
-            <option value="Thundertorm">
-            <option value="Tornado">
-        </datalist>
-       </p> 
-       <div class="slidecontainer">
-        <label>Storm Severity</label><br>
-        <label for="rating">Rating (1 to 10):</label><br>
-        <input type="range"  min="1" max="10" value="1" id="myrange" class =slider">
-        <oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-		<p>Value: <span id="value"></span><br>
+        <input type="text" name="full name" minlength="5" pattern="[A-Za-z]" required>
+
+        </p>
+        <p>
+            <label for="t2">Email</label><br>
+            <input type="email" id="t2" name="email" placeholder="demo@email.com">
+
+        </p>
+        <p>
+            <label>Phone Number</label><br>
+            <input type="tel" id="t3" name="phone number" required>
+
+        </p>
+        <p>
+            <label>Zipcode</label><br>
+            <input type="number" id="t4" required name="zipcode">
+
+        </p>
+        <p>
+            <label>Storm Date</label><br>
+            <input type="date" id="t5" name="storm date">
+
+        </p>
+        <p>
+            <lable>Storm Type</lable><br>
+            <input type="list" name="list" list="stormlist">
+            <datalist id="stormlist">
+                <option value="Flash Flood">
+                <option value="Hail">
+                <option value="Hurricane">
+                <option value="Thundertorm">
+                <option value="Tornado">
+            </datalist>
+        </p>
+        <div class="slidecontainer">
+            <label>Storm Severity</label><br>
+            <label for="rating">Rating (1 to 10):</label><br>
+            <input type="range" min="1" max="10" value="1" id="myrange" class=slider">
+            <oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+                <p>Value: <span id="value"></span><br>
         </div>
         <p>
-           <label>Region</label><br> 
-           <input name="region" list="regionlist">
-           <datalist id="regionlist">
-                <option value="Select Region" placeholder="Select Region" disabled></option>
+            <label>Region</label><br>
+            <input name="region" list="regionlist">
+            <select id="regionlist">
+                <option value="Select Region" disabled></option>
                 <option value="Preston"></option>
                 <option value="Sugar City"></option>
                 <option value="Fish Haven"></option>
-             </datalist>   
             </select>
         </p>
         <label>Are you in danger?</label><br>
@@ -62,12 +61,12 @@
         <input type="radio" id="r3" value="Yes">
         <label for="r3">No</label>
         <p>
-                <label for="t6">Comments</label><br>
-                <textarea id="t6" name="msg" maxlength="140" rows="5"></textarea>
-              </p>
-              <p>
-                <button>Submit</button>
-              </p>
-            </form>
-    </fieldset>
+            <label for="t6">Comments</label><br>
+            <textarea id="t6" name="msg" maxlength="140" rows="5"></textarea>
+        </p>
+        <p>
+            <button>Submit</button>
+        </p>
+</form>
+</fieldset>
 </form>
