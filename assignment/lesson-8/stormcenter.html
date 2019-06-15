@@ -1,27 +1,33 @@
 <h1>Report Storms in Your Area.</h1>
 <form>
     <fieldset>
+        <label>Full Name</label><br>
         <input type="text" required name="full name">
-        <label>Full Name</label>
+        
     </p>
     <p>
+        <label for="t2">Email</label><br>
         <input type="email" id="t2" name="email">
-        <label for="t2">Email</label>
+        
     </p>
     <p>
+        <label>Phone Number</label><br>
         <input type="phone" id="t3" name="phone number">
-        <label>Phone Number</label>
+        
     </p>
     <p>
+        <label>Zipcode</label><br>
         <input type="zipcode" id="t4" name="zipcode">
-        <label>Zipcode</label>
+        
     </p>
     <p>
+        <label>Storm Date</label><br>
         <input type="date" id="t5" name="storm date">
-        <label>Storm Date</label>
+        
     </p>
     
-        <input name="list" list="stormlist">
+      <lable>Storm Type</lable><br> 
+       <input name="list" list="stormlist">
         <datalist id="browerslist">
             <option value="Flash FLood">
             <option value="Hail">
@@ -29,7 +35,8 @@
             <option value="Thundertorm">
             <option value="Tornado">
         </datalist>
-        <lable>Storm Type</lable>
+        
+        <label>Region</label><br>
         <input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)"
             onchange="adjustRating(this.value)">
         <span id="script/ratingvalue.js">5</span><br>
@@ -39,7 +46,7 @@
                 <option value="Preston"></option>
                 <option value="Sugar City"></option>
                 <option value="Fish Haven"></option>
-                <label>Region</label>
+                
             </select>
         </p>
         <label>Are you in danger?</label><br>
@@ -50,7 +57,7 @@
         <input type="radio" id="r3" value="Yes">
         <label for="r3">No</label>
         <p>
-                <label for="t6">Comments</label>
+                <label for="t6">Comments</label><br>
                 <textarea id="t6" name="msg" maxlength="140" rows="5"></textarea>
               </p>
               <p>
