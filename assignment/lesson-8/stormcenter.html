@@ -46,26 +46,31 @@
         <p>
             <label>Region</label><br>
             <select class="selectregion" name="region">
-                    <option selected="true" disabled="disabled">Select Region</option>
-                    <option value="Preston">Preston</option>
-                    <option value="Sugar City">Sugar City</option>
-                    <option value="Fish Haven">Fish Haven</option>
+                <option selected="true" disabled="disabled">Select Region</option>
+                <option value="Preston">Preston</option>
+                <option value="Sugar City">Sugar City</option>
+                <option value="Fish Haven">Fish Haven</option>
             </select>
-        </p>
-        <label>Are you in danger?</label><br>
-        <input type="radio" id="r1" value="Yes" checked>
-        <label for="r1">Yes</label>
-        <input type="radio" id="r2" value="Yes">
-        <label for="r2">Maybe</label>
-        <input type="radio" id="r3" value="Yes">
-        <label for="r3">No</label>
-        <p>
-            <label for="t6">Comments</label><br>
-            <textarea id="t6" name="msg" maxlength="140" rows="5"></textarea>
-        </p>
-        <p>
-            <button>Submit</button>
-        </p>
+            <div>
+                <label>Are you in imminent danger?</label><br>
+                <input type="radio" id="r1" value="Yes" checked>
+                <label for="r1">Yes</label>
+            </div>
+            <div>
+                <input type="radio" id="r2" value="Maybe">
+                <label for="r2">Maybe</label>
+            </div>
+            <div>
+                <input type="radio" id="r3" value="No">
+                <label for="r3">No</label>
+            </div>
+            <p>
+                <label for="t6">Comments</label><br>
+                <textarea id="t6" name="msg" maxlength="140" rows="5"></textarea>
+            </p>
+            <p>
+                <button>Submit</button>
+            </p>
 </form>
 </fieldset>
 </form>
