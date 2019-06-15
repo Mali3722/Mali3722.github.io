@@ -39,17 +39,19 @@
        <div class="slidecontainer">
         <label>Storm Severity</label><br>
         <label for="rating">Rating (1 to 10):</label><br>
-		<input type="range"  min="1" max="10" value="1" id="myrange" class =slider">oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+        <input type="range"  min="1" max="10" value="1" id="myrange" class =slider">
+        <oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
 		<p>Value: <span id="value"></span><br>
         </div>
         <p>
            <label>Region</label><br> 
-           <input name="region"list="Select region">
-                <option value="Select Region" disabled></option>
+           <input name="region" list="regionlist">
+           <datalist id="regionlist">
+                <option value="Select Region" placeholder="Select Region" disabled></option>
                 <option value="Preston"></option>
                 <option value="Sugar City"></option>
                 <option value="Fish Haven"></option>
-                
+             </datalist>   
             </select>
         </p>
         <label>Are you in danger?</label><br>
