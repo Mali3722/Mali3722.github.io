@@ -2,12 +2,12 @@
 <form>
     <fieldset>
         <label>Full Name</label><br>
-        <input type="text" required name="full name">
-        <textarea id="t6" name="msg" maxlength="140" rows="5"></textarea>
+        <input type="text" name="full name" minlength="5" required pattern="[A-Za-z]" >
+        
     </p>
     <p>
         <label for="t2">Email</label><br>
-        <input type="email" id="t2" required name="email" >
+        <input type="email" id="t2" required name="email" placeholder="demo@email.com" >
         
     </p>
     <p>
