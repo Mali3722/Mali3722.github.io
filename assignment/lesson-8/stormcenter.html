@@ -36,15 +36,15 @@
             <option value="Tornado">
         </datalist>
        </p> 
-       <p>
+       <div class="slidecontainer">
         <label>Storm Severity</label><br>
         <label for="rating">Rating (1 to 10):</label><br>
-		<input type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
-		<span id="ratingvalue">5</span><br>
-        </p>
+		<input type="range"  min="1" max="10" value="1" id="myrange" class =slider">oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
+		<p>Value: <span id="value"></span><br>
+        </div>
         <p>
            <label>Region</label><br> 
-           <input name="region"list"select region">
+           <input name="region"list="Select region">
                 <option value="Select Region" disabled></option>
                 <option value="Preston"></option>
                 <option value="Sugar City"></option>
