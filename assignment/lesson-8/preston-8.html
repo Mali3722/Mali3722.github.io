@@ -37,24 +37,19 @@
 
         <h2>Preston Idaho</h2>
         <div class="herodiv">
-            <img srcset="images/320_preston.jpg 320w,
-                         images/480_preston.jpg 480w,
-                         images/800_preston.jpg 800w" sizes="(max-width:320px) 280px,
-                           (max-width: 480px) 440px,
+            <img srcset="images/480_preston.jpg 480w,
+                         images/650_preston.jpg 650w,
+                         images/800_preston.jpg 800w" sizes="(max-width:480px) 280px,
+                           (max-width: 650px) 440px,
                            1000px" src="images/320_preston.jpg" alt="Preston Idaho">
             <section class="weathersummary">
                 <h3>Weather Summary</h3>
                 <p>Currently: Sunny</p>
-                <p>High: 76F</p>
-                <p>Windchill: 78F</p>
+                <p>High: <span id="high">76F</span></p>
+                <p>Windchill:<span id="result"></span></p>
                 <p>Humidity 69%</p>
-                <p>Wind Speed: 5 mph</p>
-                <div>
-                  <span id="high">76</span>
-                  <span id="speed">5</span>
-                  <p>Computed windchill</p><span id="result"></span>
-                </div>
-                
+                <p>Wind Speed: <span id="speed">5 mph </span></p>
+                         
             </section>
         </div>
 

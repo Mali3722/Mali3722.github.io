@@ -16,6 +16,7 @@ header {
 .container {
     display: block;
     flex-direction: row;
+    justify-content: center
     /*margin: .5rem auto;*/
 }
 
@@ -62,8 +63,9 @@ h2 {
     top: 20px;
     left: 50px;
     background: radial-gradient(#eee,#579ed1);
-    padding: 2rem;
+    padding: .5rem;
     box-shadow: 0 0 30px #777;
+    color: black;
 }
 
 h3 {
@@ -80,12 +82,10 @@ p {
     color: black;
 }
 
-  
-
 nav { margin: 0 auto; max-width: 1000px; background-color: #3fbdee; }
 
     .navigation { list-style: none; text-align: center; }
-    .navigation li:first-child {display: block;}
+    .navigation li:first-child {display: flex;}
     .navigation li {display: none;}
     .navigation a {display:block; color:black; padding: .75em; text-align: center; text-decoration: none;}
     .navigation a:hover {color:#fff; background-color: rgba(97, 8, 38, 0.534); font-weight: 700;
@@ -149,8 +149,22 @@ p{
 }
 .grid {
     display: grid;
-    grid-template-columns: 200px, 200px, 200px;
-    grid-template-rows: 200px, 200px, 200px;
-    grid-auto-rows: 100px;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 20px;
+}
+fieldset {
+    background-color:#002458;
+    color: white; 
+    font-size: 20px;
+    margin: auto;
+    padding: 1px;
+    max-width: 1000px;
+}   
+    .sfirst {
+        display: flex;
+        width: 100px;
+        text-align: right;
+    }
+
+
 }
