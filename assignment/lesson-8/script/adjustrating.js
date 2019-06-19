@@ -1,8 +1,8 @@
-var slider = document.getElementById("myRange");
+/*var slider = document.getElementById("myrange");
 var output = document.getElementById("value");
 
-output.innerHTML = slider.value;
+output.innerHTML = slider.value;*/
 
-slider.oniput = function() {
-    output.innerHTML = this.value;
+function adjustRating() {
+    document.getElementById("ratingvalue").innerHTML = document.getElementById("myrange").value;
 }

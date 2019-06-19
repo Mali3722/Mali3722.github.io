@@ -1,8 +1,6 @@
-funtion toggleMenu() {
-    document.getElementsByClassName("navigation")
-    [0].classList.toggle("responsive");
+function toggleMenu() {
+    document.getElementsByClassName("navigation")[0].classList.toggle("responsive");
 }
-{
-    var date=today();
-    document.getElementsById("todaysdate").innerHTML=today;
-}
+
+var today = new Date();
+document.getElementById("todaysdate").innerHTML=today;
