@@ -7,6 +7,7 @@ html {
   body {
     width: 800px;
     margin: 0 auto;
+    background-color: #16b7ed;
   }
   
   h1, h2 {
@@ -18,12 +19,14 @@ html {
   h1 {
     font-size: 4rem;
     text-align: center;
+    color: #b7368f;
   }
   
   header p {
     font-size: 1.3rem;
     font-weight: bold;
     text-align: center;
+    color: white;
   }
   
   /* section styles */
@@ -35,14 +38,17 @@ html {
   
   section p {
     margin: 5px 0;
+    color:White;
   }
   
   section ul {
     margin-top: 0;
+    color:White;
   }
   
   h2 {
     font-size: 2.5rem;
     letter-spacing: -5px;
     margin-bottom: 10px;
+    color: #b7368f;
   }
