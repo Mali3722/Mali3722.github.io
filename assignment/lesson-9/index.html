@@ -7,17 +7,77 @@
     <title>Southern Idaho Weather</title>
     <meta name="description" content="Southern_Idho_Weather_Preston, Idaho weather information">
     <link rel="stylesheet" href="css/normalized.css">
-    <link rel="stylesheet" href="css/small-8.css">
-    <link rel="stylesheet" href="css/medium-8.css">
-    <link rel="stylesheet" href="css/large-8.css">
+    <link rel="stylesheet" href="css/small-9.css">
+    <link rel="stylesheet" href="css/medium-9.css">
+    <link rel="stylesheet" href="css/large-9.css">
     <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
 </head>
+
+<body>
+    <header>
+
+    </header>
+    <section>
+
+    </section>
+    <script>
+        var header = document.querySelector('header');
+        var section = document.querySelector('secton');
+
+        var requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
+        var request = new XMLHttpRequest();
+        request.open('GET', requestURL);
+        request.responseText = 'json';
+        request.send();
+
+        request.onload = function () {
+            var townInfo = request.response;
+            displayTownData(townInfo);
+        }
+
+        function displayTownData(jsonObj) {
+            var location = jsonObj['towns'];
+
+            for (var i = 0; i < location.length; i++) {
+                var myArticle = document.createElement('article');
+                var myH2 = document.createElement('h2');
+                var myPara1 = document.createElement('p');
+                var myPara2 = document.createElement('p');
+                var myPara3 = document.createElement('p');
+                var myPara4 = document.createElement('p');
+                var myList = document.createElement('ul');
+
+                myH2.textContent = towns[i].name;
+                myPara1.textContent = 'motto: ' + towns[i].motto;
+                myPara1.textContent = 'yearFounded: ' + towns[i].yearFounded;
+                myPara1.textContent = 'currentPopulation: ' + towns[i].currentPopulation;
+                myPara1.textContent = 'averageRainfall: ' + towns[i].averageRainfall;
+
+                var localEvents = towns[i].events;
+                for (var j = 0; j < localEvents.length, j++) {
+                    var listItem = document.createElement('li');
+                    listItem.textContent = localEvents[j];
+                    myList.appendChild(listItem);
+                }
+
+                myArticle.appendChild(myH2);
+                myArticle.appendChild(myPara1);
+                myArticle.appendChild(myPara2);
+                myArticle.appendChild(myPara3);
+                myArticle.appendChild(myPara4);
+
+                section.appendChild(myArticle);
+
+            }
+    </script>
+</body>
+
 <footer>
     <p>&copy; Southern Idaho Weather | Attributions | Brook Phipps | <span id="todaysdate"></span></p>
 </footer>
+<script src="script/adjustrating.js"></script>
 <script src="script/currentdate.js"></script>
 <script src="script/windchill.js"></script>
-<script src="script/adjustrating.js"></script>
 </body>
 
 </html>
