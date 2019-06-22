@@ -12,6 +12,17 @@
     <link rel="stylesheet" href="css/large-9.css">
     <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
 </head>
+<nav>
+    <div class="navigation">
+        <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+        <li><a href="index.html">Home</a></li>
+        <li class="active"><a href="#">Preston</a></li>
+        <li><a href="#">Soda Springs</a></li>
+        <li><a href="#">Fish Haven</a></li>
+        <li><a href="stormcenter-9.html">Storm Center</a></li>
+        <li><a href="gallery-9.html">Gallery</a></li>
+    </div>
+</nav>
 
 <body>
     <header>
@@ -54,10 +65,10 @@
                 myPara1.textContent = 'averageRainfall: ' + towns[i].averageRainfall;
 
                 var localEvents = towns[i].events;
-                for (var j = 0; j < localEvents.length, j++) {
+                for (var j = 0; j < localEvents.length, j++); {
                     var listItem = document.createElement('li');
                     listItem.textContent = localEvents[j];
-                    myList.appendChild(listItem);
+                    myList.appendChild(listItem)
                 }
 
                 myArticle.appendChild(myH2);
