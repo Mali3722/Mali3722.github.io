@@ -56,7 +56,6 @@
                 var myPara2 = document.createElement('p');
                 var myPara3 = document.createElement('p');
                 var myPara4 = document.createElement('p');
-                var myList = document.createElement('ul');
 
                 myH2.textContent = towns[i].name;
                 myPara1.textContent = 'motto: ' + towns[i].motto;
@@ -64,22 +63,17 @@
                 myPara1.textContent = 'currentPopulation: ' + towns[i].currentPopulation;
                 myPara1.textContent = 'averageRainfall: ' + towns[i].averageRainfall;
 
-                var localEvents = towns[i].events;
-                for (var j = 0; j < localEvents.length, j++); {
-                    var listItem = document.createElement('li');
-                    listItem.textContent = localEvents[j];
-                    myList.appendChild(listItem)
-                }
-
-                myArticle.appendChild(myH2);
-                myArticle.appendChild(myPara1);
-                myArticle.appendChild(myPara2);
-                myArticle.appendChild(myPara3);
-                myArticle.appendChild(myPara4);
-
-                section.appendChild(myArticle);
-
             }
+
+            myArticle.appendChild(myH2);
+            myArticle.appendChild(myPara1);
+            myArticle.appendChild(myPara2);
+            myArticle.appendChild(myPara3);
+            myArticle.appendChild(myPara4);
+
+            section.appendChild(myArticle);
+
+        }
     </script>
 </body>
 
