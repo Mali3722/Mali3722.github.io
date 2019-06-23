@@ -5,17 +5,20 @@ request.open('GET', requestURL);
 request.responseType = 'json';
 request.send();
 request.onload = function () {
-    var townInfo = request.response;
-    townData(townInfo);
+    var townData = request.response;
+    showData(townData);
 }
 
 function showData(jsonObj) {
-    var location = jsonObj['towns'];
-    var townNames = ["Preston", "Soda Springs", "Fish Haven"]
-        if (location[i].name == "Preston" || location[i].name == "Soda Springs" || location[i].name == "Fish Haven") {
+    var towns = jsonObj['towns'];
+    var townNames = ["Preston", "Soda Spring", "Fish Haven"]
+    for (var i = 0; i < towns.length; i++) {
+        for (var x = 0; x<townNames.length; x++) {
+        
+            if (towns[i].name == townNames[x]); {
 
                 var myArticle = document.createElement('article');
-                myArticle.className = "townInfo";
+                myArticle.className = "townData";
                 var myH2 = document.createElement('h2');
                 var myPara1 = document.createElement('p');
                 var myPara2 = document.createElement('p');
@@ -24,9 +27,9 @@ function showData(jsonObj) {
 
                 myH2.textContent = towns[i].name;
                 myPara1.textContent = 'motto: ' + towns[i].motto;
-                myPara1.textContent = 'yearFounded: ' + towns[i].yearFounded;
-                myPara1.textContent = 'currentPopulation: ' + towns[i].currentPopulation;
-                myPara1.textContent = 'averageRainfall: ' + towns[i].averageRainfall;
+                myPara2.textContent = 'yearFounded: ' + towns[i].yearFounded;
+                myPara3.textContent = 'currentPopulation: ' + towns[i].currentPopulation;
+                myPara4.textContent = 'averageRainfall: ' + towns[i].averageRainfall;
 
                 myArticle.appendChild(myH2);
                 myArticle.appendChild(myPara1);
@@ -34,10 +37,11 @@ function showData(jsonObj) {
                 myArticle.appendChild(myPara3);
                 myArticle.appendChild(myPara4);
 
-                var location = document.getElementById(town[i].name);
+               
 
                 section.appendChild(myArticle);
 
             }
         }
-    
+    }
+}
