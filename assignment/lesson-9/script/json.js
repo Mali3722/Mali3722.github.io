@@ -1,14 +1,11 @@
 <script>
-    var header = document.querySelector('header');
-    var section = document.querySelector('secton');
-
+    var section = document.querySelector('section');
     var requestURL = "https://byui-cit230.github.io/weather/data/towndata.json";
     var request = new XMLHttpRequest();
     request.open('GET', requestURL);
-    request.responseText = 'json';
+    request.responseType = 'json';
     request.send();
-
-        request.onload = function () {
+    request.onload = function () {
             var townInfo = request.response;
 townData(townInfo);
 }
