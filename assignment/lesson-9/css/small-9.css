@@ -166,7 +166,6 @@ fieldset {
 }   
  
 .location {
-    position: relative;
     display: grid;
     grid-template-columns: 1fr, 1fr, 1fr;
     column-gap: 10px;
@@ -175,21 +174,21 @@ fieldset {
 
 }
 .nested1 {
-        position: absolute;
+        position: left;
         top: 20px;
         left: 50px;
         background-color: #777;
         padding: .5rem;
     }
     .nested2 {
-        position: absolute;
+        position: center;
         top: 20px;
         left: 50px;
         background-color: #777;
         padding: .5rem;
     }
     .nested3 {
-        position: absolute;
+        position: right;
         top: 20px;
         left: 50px;
         background-color: #777;
