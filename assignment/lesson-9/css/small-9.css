@@ -165,5 +165,33 @@ fieldset {
     max-width: 1000px;
 }   
  
+.location {
+    position: relative;
+    display: grid;
+    grid-template-columns: 1fr, 1fr, 1fr;
+    column-gap: 10px;
+    color: grey;
+    border-color: black;
 
-
+}
+.nested1 {
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        background-color: #777;
+        padding: .5rem;
+    }
+    .nested2 {
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        background-color: #777;
+        padding: .5rem;
+    }
+    .nested3 {
+        position: absolute;
+        top: 20px;
+        left: 50px;
+        background-color: #777;
+        padding: .5rem;
+    }

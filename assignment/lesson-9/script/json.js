@@ -11,10 +11,12 @@ request.onload = function () {
 
 function showData(jsonObj) {
     var towns = jsonObj['towns'];
-    var townNames = ["Preston", "Soda Spring", "Fish Haven"]
+    var townNames = ["Preston", "Soda Springs", "Fish Haven"]
+    var output = [];
     for (var i = 0; i < towns.length; i++) {
         for (var x = 0; x < townNames.length; x++) {
             if (towns[i].name == townNames[x]); {
+                output.push(towns[i]);
 
                 var myArticle = document.createElement('article');
                 myArticle.className = "townData";
