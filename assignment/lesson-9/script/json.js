@@ -9,13 +9,10 @@ request.onload = function () {
     townData(townInfo);
 }
 
-function townData(jsonObj) {
+function showData(jsonObj) {
     var location = jsonObj['towns'];
     var townNames = ["Preston", "Soda Springs", "Fish Haven"]
-    var output = [];
-    for (var i = 0; i < location.length; i++) {
-        for (var x = 0; x < townNames.length; x++) {
-            if (location[i] == townNames[x]) {
+        if (location[i].name == "Preston" || location[i].name == "Soda Springs" || location[i].name == "Fish Haven") {
 
                 var myArticle = document.createElement('article');
                 myArticle.className = "townInfo";
@@ -43,4 +40,4 @@ function townData(jsonObj) {
 
             }
         }
-    }
+    
