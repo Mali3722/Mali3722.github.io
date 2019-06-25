@@ -165,34 +165,23 @@ fieldset {
     max-width: 1000px;
 }   
  
-.location {
+.grid-container #location {
     display: grid;
-    grid-column: repeat(1fr 1fr 1fr);
-    column-gap: 10px;
-    color: black;
-    border-color: black;
+    grid-column-gap: 50px;
+    background-color: grey;
+    padding: 10px;
     
 
 }
-.nested1 {
-        position: left;
-        top: 20px;
-        left: 50px;
-        background-color: #777;
-        padding: .5rem;
-        color: black
+.grid-item {
+        background-color: white;
+        color: black;
     }
     .nested2 {
-        position: center;
-        top: 20px;
-        left: 50px;
-        background-color: #777;
-        padding: .5rem;
+        flex: 2;
+        
     }
     .nested3 {
-        position: right;
-        top: 20px;
-        left: 50px;
-        background-color: #777;
-        padding: .5rem;
+        flex: 3;
+        
     }
