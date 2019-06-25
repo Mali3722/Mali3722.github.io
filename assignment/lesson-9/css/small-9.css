@@ -169,7 +169,7 @@ fieldset {
     display: grid;
     grid-column: repeat(1fr 1fr 1fr);
     column-gap: 10px;
-    color: grey;
+    color: black;
     border-color: black;
     
 
@@ -180,6 +180,7 @@ fieldset {
         left: 50px;
         background-color: #777;
         padding: .5rem;
+        color: black
     }
     .nested2 {
         position: center;

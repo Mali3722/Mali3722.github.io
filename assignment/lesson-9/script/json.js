@@ -11,11 +11,9 @@ request.onload = function () {
 
 function showData(jsonObj) {
     var towns = jsonObj['towns'];
-    var townNames = ["Preston", "Soda Springs", "Fish Haven"]
     var output = [];
     for (var i = 0; i < towns.length; i++) {
-        for (var x = 0; x < townNames.length; x++) {
-            if (towns[i].name == townNames[x]); {
+                  if (towns[i].name == "Preston" || towns[i].name =="Soda Springs" || towns[i].name =="Fish Haven") {
                 output.push(towns[i]);
 
                 var myArticle = document.createElement('article');
@@ -37,10 +35,10 @@ function showData(jsonObj) {
                 myArticle.appendChild(myPara2);
                 myArticle.appendChild(myPara3);
                 myArticle.appendChild(myPara4);
-
-                section.appendChild(myArticle);
+                var tn = document.getElementById(towns[i].name)  
+             
+                tn.appendChild(myArticle);
 
             }
         }
     }
-}
