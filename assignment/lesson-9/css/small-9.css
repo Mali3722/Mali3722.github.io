@@ -24,8 +24,8 @@ header {
 #logo {
     display: block;
     float: left;
-    width: 1em;
-    height: 1em;
+    width: 3em;
+    height: 3em;
     margin: 10px;
 }
 
@@ -129,11 +129,13 @@ td {
     text-align: center;
     color: white;
     background-color: #003679;
+    
 }
 .story { /*Preston page Founders day Fresoc*/
     color:white;
     text-align: justify;
     margin: 10px;
+    max-width: 1000px;
 }
 footer {
     margin: auto;
@@ -166,31 +168,40 @@ fieldset {
 } 
 
 .indpg {
+    display: flex;
     max-width: 1000px; 
     background-color: whitesmoke;
-    margin: 0px;
+    margin: auto;
     color:black
     
 }
  .container58 { /*index page main boxes*/
-    display: flex;
+    display: flexbox;
+    max-width: 1000px;
+    margin: auto;
     flex-flow: row;
     background-color: #777;
-    padding: 10px;
+    padding: 20px;
     color: black;
- }
+    text-align: center;
+     }
 
 .box1, .box2, .box3 {/*Preston image on index pg"*/
     flex:3;
+    float: left;
     background-color: white;
-    padding: 5em;
+    padding: 1em;
     font-size: 12px;
     color: black;
-    position: webkit-sticky;
-    position: sticky;
     bottom: 1rem;
     align-self: flex-end;
-     
+    text-align: center;
+    margin: 10px;
+    margin-bottom: auto;
+    max-width: 200px;
+    align-self: stretch;
+    }
+.indmap { /*contact info on index page*/
+    max-width: 1000px; 
+    margin:0 auto;
 }
-
-
