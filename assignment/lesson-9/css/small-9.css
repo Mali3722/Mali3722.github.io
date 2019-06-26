@@ -166,7 +166,14 @@ fieldset {
     padding: 1px;
     max-width: 1000px;
 } 
-
+.welcome {
+    display: inline-block;
+    text-align: center;
+    color: black;
+    background-color: rgba(255, 196, 0, 0.925);
+    max-width: 1000px; 
+    margin: 0;
+}
 .indpg {
     display: flex;
     max-width: 1000px; 
@@ -176,7 +183,7 @@ fieldset {
     
 }
  .container58 { /*index page main boxes*/
-    display: flexbox;
+    display: flex;
     max-width: 1000px;
     margin: auto;
     flex-flow: row;
@@ -203,5 +210,8 @@ fieldset {
     }
 .indmap { /*contact info on index page*/
     max-width: 1000px; 
-    margin:0 auto;
+    margin: auto;
+    text-align: center;
+    color: white;
+    background-color: #003679;
 }
