@@ -166,14 +166,22 @@ fieldset {
     padding: 1px;
     max-width: 1000px;
 } 
+
 .welcome {
-    display: inline-block;
-    text-align: center;
-    color: black;
-    background-color: rgba(255, 196, 0, 0.925);
+    position: relative;
+    width: fit-content;
+    margin: auto;
     max-width: 1000px; 
-    margin: 0;
+    text-align: center;
+    padding: 1px;
+    color: black;
+    background-color: #3fbdee;
+    margin: auto;
 }
+.welcomediv img{
+    width: 100%
+}
+
 .indpg {
     display: flex;
     max-width: 1000px; 
