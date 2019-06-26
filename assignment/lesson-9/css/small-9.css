@@ -1,10 +1,11 @@
-body {
-    background: white;
+body{
+    background: whitesmoke;
     box-sizing: border-box;
+ 
 }
 header {
     text-align: center;
-    font-size: 80px; 
+    font-size: 20px; 
     font-family: 'handlee', 'cursive','Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     background-color: #002458;
     color: white;
@@ -13,7 +14,7 @@ header {
     max-width: 1000px;
     box-shadow: 0 0 10px #777;
 }
-.container {
+.ppcontainer { /* tile and logo*/
     display: block;
     flex-direction: row;
     justify-content: center
@@ -34,7 +35,21 @@ h1 {
     font-family: Arial, Helvetica, sans-serif; 
     color: white; 
 }
+nav { margin: 0 auto; max-width: 1000px; background-color: #3fbdee; }
 
+    .navigation { list-style: none; text-align: center; }
+    .navigation li:first-child {display: flex;}
+    .navigation li {display: none;}
+    .navigation a {display:block; color:black; padding: .75em; text-align: center; text-decoration: none;}
+    .navigation a:hover {color:#fff; background-color: rgba(97, 8, 38, 0.534); font-weight: 700;
+}
+.responsive li {display: block;}
+
+.active {display: inline;color: #003679} 
+
+.navigation {
+    margin: 0;
+}
 main {
     max-width: 1000px; 
     margin:0 auto;
@@ -75,24 +90,6 @@ h3 {
     color: black;
 }  
 
-p {
-    font-size: 16px; 
-    text-align: center;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    color: black;
-}
-
-nav { margin: 0 auto; max-width: 1000px; background-color: #3fbdee; }
-
-    .navigation { list-style: none; text-align: center; }
-    .navigation li:first-child {display: flex;}
-    .navigation li {display: none;}
-    .navigation a {display:block; color:black; padding: .75em; text-align: center; text-decoration: none;}
-    .navigation a:hover {color:#fff; background-color: rgba(97, 8, 38, 0.534); font-weight: 700;
-}
-.responsive li {display: block;}
-
-.active {display: inline;color: #003679} 
 th {
      
     border: black 1px solid;
@@ -129,9 +126,14 @@ td {
         margin: 10px;
     }
 .map {
-    text-align: left;
-    color: black;
+    text-align: center;
+    color: white;
     background-color: #003679;
+}
+.story { /*Preston page Founders day Fresoc*/
+    color:white;
+    text-align: justify;
+    margin: 10px;
 }
 footer {
     margin: auto;
@@ -144,9 +146,7 @@ footer {
     background-color: #002458;
     
 }
-p{
-    color: white;
-}
+
 .grid {
     display: grid;
     grid-template-columns: 1fr;
@@ -163,25 +163,34 @@ fieldset {
     margin: auto;
     padding: 1px;
     max-width: 1000px;
-}   
- 
-.grid-container #location {
-    display: grid;
-    grid-column-gap: 50px;
-    background-color: grey;
-    padding: 10px;
-    
+} 
 
+.indpg {
+    max-width: 1000px; 
+    background-color: whitesmoke;
+    margin: 0px;
+    color:black
+    
 }
-.grid-item {
-        background-color: white;
-        color: black;
-    }
-    .nested2 {
-        flex: 2;
-        
-    }
-    .nested3 {
-        flex: 3;
-        
-    }
+ .container58 { /*index page main boxes*/
+    display: flex;
+    flex-flow: row;
+    background-color: #777;
+    padding: 10px;
+    color: black;
+ }
+
+.box1, .box2, .box3 {/*Preston image on index pg"*/
+    flex:3;
+    background-color: white;
+    padding: 5em;
+    font-size: 12px;
+    color: black;
+    position: -webkit-sticky;
+    position: sticky;
+    bottom: 1rem;
+    align-self: flex-end;
+     
+}
+
+
