@@ -1,17 +1,17 @@
-let weatherRequest = new XMLHttpRequest();
-let apiURLstring = 'https://api.openweathermap.org/data/2.5/forecast/hourly?id=5604473&units=imperial&APPID=e2b7cdf510dc1ed38f09a77e6684cf29';
-weatherRequest.open('Get', apiURLstring, true);
-weatherRequest.send();
+let weatherObject = new XMLHttpRequest();
+let apiURLstring2 = 'https://api.openweathermap.org/data/2.5/forecast/hourly?id=5604473&units=imperial&APPID=e2b7cdf510dc1ed38f09a77e6684cf29';
+weatherObject.open('Get', apiURLstring2, true);
+weatherObject.send();
 
-weatherRequest.onload = function () {
-    let weatherData = JSON.parse(weatherRequest.responseText);
-    console.log(weatherData);
+weatherObject.onload = function () {
+    let weatherInfo = JSON.parse(weatherRequest.responseText);
+    console.log(weatherInfo);
 
     
     
     let icon = "http://openweathermap.org/img/wn/" + weatherData.weather[0].icon + ".png"
 
-    let description = weatherData.weather[0].description;
+    let description = weatherInfo.weather[0].description;
 
     document.getElementById('cc-img').setAttribute('src', icon);
     document.getElementById('current').setAttribute('alt', description);
