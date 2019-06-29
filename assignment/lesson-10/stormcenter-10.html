@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,inital-scale=1.0">
+    <Title>Storm Center</Title>
+    <meta name="description" content="Southern_Idho_Weather_Preston, Idaho weather information">
+    <link rel="stylesheet" href="css/normalized.css">
+    <link rel="stylesheet" href="css/small-10.css">
+    <link rel="stylesheet" href="css/medium-10.css">
+    <link rel="stylesheet" href="css/large-10.css">
+    <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="container">
+        <img id="logo" src="images/sun.png" alt="Sun Logo">
+        <section class="headings">
+            <h1>Southern Idaho Weather</h1>
+            <h2>Where the sun goes to play!</h2>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index-10.html">Home</a></li>
+            <li><a href="preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li class="active"><a href="stormcenter-10.html">Storm Center</a></li>
+            <li><a href="gallery-10.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <form action="https://Mali3722.github.io/assignment/lesson-9/thanks.html" method="get">
+        <fieldset>
+            <h1>Report Storms in Your Area.</h1>
+            <label class="sfirst">Full Name*<br><input type="text" name="fullname" required
+                    pattern="[A-Z a-z]{5,}"></label><br>
+
+            <label class="ssecond" for="t2">Email<br></label><br>
+            <input type="email" id="t2" name="email" placeholder="demo@email.com"><br>
+
+            <label class="stel">Phone Number*<br></label><br>
+            <input type="tel" id="t3" name="phone number" required><br>
+
+            <label class="szip">Zipcode*<br></label><br>
+            <input type="number" id="t4" required name="zipcode"><br>
+
+            <label class="sdat">Storm Date<br></label><br>
+            <input type="date" id="t5" name="storm date"><br>
+
+            <lable class="stype">Storm Type<br></lable><br>
+            <input type="list" name="list" list="stormlist">
+            <datalist id="stormlist">
+                <option value="Flash Flood">
+                <option value="Hail">
+                <option value="Hurricane">
+                <option value="Thundertorm">
+                <option value="Tornado">
+            </datalist><br>
+
+            <div class="slidecontainer">
+                <label>Storm Severity</label><br>
+                <label for="rating">Rating (1 to 10):</label><br>
+                <input type="range" min="1" max="10" value="5" id="myrange" class="slider"
+                    oninput="adjustRating()" onchange="adjustRating()">
+                <p>Value: <span id="ratingvalue"></span><br>
+            </div>
+
+            <label>Region</label><br>
+            <select class="selectregion" name="region">
+                <option selected="true" disabled="disabled">Select Region</option>
+                <option value="Preston">Preston</option>
+                <option value="Sugar City">Sugar City</option>
+                <option value="Fish Haven">Fish Haven</option>
+            </select><br>
+            <p>Are you in imminent danger?<br></p>
+            <input type="radio" name="answer" value="yes">Yes<br>
+            <input type="radio" name="answer" value="maybe">Maybe<br>
+            <input type="radio" name="answer" value="no">No<br><br>
+
+            <label class="scom" for="t6">Comments<br></label><br>
+            <textarea id="t6" name="msg" maxlength="140" rows="5"></textarea><br>
+
+            <p>
+                <input type="submit" value="Submit" />
+
+            </p>
+
+        </fieldset>
+    </form>
+    <footer>
+        <p>&copy; Southern Idaho Weather | Attributions | Brook Phipps |<span id="todaysdate"></span></p>
+    </footer>
+    <script src="script/adjustrating.js"></script>
+    <script src="script/currentdate.js"></script>
+</body>
+</html>

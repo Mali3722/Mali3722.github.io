@@ -1,0 +1,16 @@
+@media only screen and (min-width: 45em){
+    .navigation li:first-child{display: none; }
+    .navigation li {display: row; flex: 1 1 auto;}
+    .navigation .container {flex-direction: row;}
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: 1fr 1fr ;
+        grid-column-gap: 20px;
+        padding: 5px;
+    }
+
+    .grid img {
+        width: 100%;
+    }
