@@ -201,7 +201,7 @@ fieldset {
     text-align: center;
      }
 
-.box1, .box2, .box3 {/*Preston image on index pg"*/
+.box1 {/*Preston image on index pg"*/
     flex:3;
     float: left;
     background-color: white;
@@ -215,7 +215,12 @@ fieldset {
     margin-bottom: auto;
     max-width: 200px;
     align-self: stretch;
+    height: 100%;
     }
+
+   .box1 img  {
+      max-width: 150px; 
+   }
 .indmap { /*contact info on index page*/
     max-width: 1000px; 
     margin: auto;
