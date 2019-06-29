@@ -13,16 +13,12 @@ weatherObject.onload = function () {
             if (forcast <= 5) {
 
 
-                var day = "day" + frocast;
+                var day = "day" + forecast;
+                var icon = "icon-" + forecast;
 
-
-
-                let icon = "http://openweathermap.org/img/wn/" + weatherInfo.weather[0].icon + ".png"
-
-                let description = weatherInfo.weather[0].description;
 
                 document.getElementById('cc-img').setAttribute('src', icon);
-                document.getElementById('current').setAttribute('alt', description);
+                document.getElementById(icon).setAttribute('"http://openweathermap.org/img/wn/" + weatherInfo[i].weather[0].icon + ".png");
 
                 forecast++;
             }
