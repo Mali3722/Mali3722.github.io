@@ -26,7 +26,7 @@
         <ul class="navigation">
             <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
             <li><a href="index-10.html">Home</a></li>
-            <li class="active"><a href="#">Preston</a></li>
+            <li class="active"><a href="preston-10.html">Preston</a></li>
             <li><a href="#">Soda Springs</a></li>
             <li><a href="#">Fish Haven</a></li>
             <li><a href="stormcenter-10.html">Storm Center</a></li>
@@ -44,11 +44,11 @@
                            1000px" src="images/320_preston.jpg" alt="Preston Idaho">
             <section class="weathersummary">
                 <h3>Weather Summary</h3>
-                <p>Currently: Sunny</p>
-                <p>High: <span id="high">76 F</span></p>
+                <p>Currently: <span id="current"></span></p>
+                <p>High: <span id="high"></span></p>
                 <p>Windchill:<span id="result"></span></p>
-                <p>Humidity 69%</p>
-                <p>Wind Speed: <span id="speed">5 mph </span></p>
+                <p>Humidity: <span id="humidity"></span></p></p>
+                <p>Wind Speed: <span id="speed"></span></p>
                          
             </section>
         </div>
@@ -65,11 +65,11 @@
                     <th>Sun</th>
                 </tr>
                 <tr>
-                    <td>89°F</td>
-                    <td>87°F</td>
-                    <td>78°F</td>
-                    <td>75°F</td>
-                    <td>72°F</td>
+                    <td ><img id="cc-img" src="" at=""><br><span id="day1">&deg; F </span></td>
+                    <td><img id="cc-img" src="" at=""><br><span id="day1">&deg; F </span></td>
+                    <td><img id="cc-img" src="" at=""><br><span id="day1">&deg; F </span></td>
+                    <td><img id="cc-img" src="" at=""><br><span id="day1">&deg; F </span></td>
+                    <td><img id="cc-img" src="" at=""><br><span id="day1">&deg; F </span></td>
                 </tr>
             </table>
         </section>
@@ -103,16 +103,20 @@
                     Preston, ID 83263
                     999.999.9999<br>
                     southernidahoweather@siw.com
+                   <br>Weather information provided by Open Weather.
                 </p>
             </div>
         </article>
     </main>
     <footer>
-        <p>&copy; Southern Idaho Weather | Attributions | Brook Phipps | <span id="todaysdate"></span></p>
+        <p>&copy; Southern Idaho Weather | Attributions | Brook Phipps | <span id="todaysdate"></span>
+        <a href="https://openweathermap.org/city">Open Weather</a></p>
     </footer>
     <script src="script/adjustrating.js"></script>
     <script src="script/currentdate.js"></script>
     <script src="script/windchill.js"></script>
+    <script src="script/presweather.js"></script>
+    <script src="script/forecastapi.js"></script>
 </body>
 
 </html>
