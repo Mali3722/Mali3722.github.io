@@ -9,7 +9,7 @@ weatherObject.onload = function () {
 
     
     
-    let icon = "http://openweathermap.org/img/wn/" + weatherData.weather[0].icon + ".png"
+    let icon = "http://openweathermap.org/img/wn/" + weatherInfo.weather[0].icon + ".png"
 
     let description = weatherInfo.weather[0].description;
 
