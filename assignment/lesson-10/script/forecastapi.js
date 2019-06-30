@@ -4,7 +4,7 @@ weatherObject.open('Get', apiURLstring2, true);
 weatherObject.send();
 
 weatherObject.onload = function () {
-    let weatherInfo = JSON.parse(weatherRequest.responseText);
+    let weatherInfo = JSON.parse(weatherObject.responseText);
     console.log(weatherInfo);
 
     var forecast = 1;
@@ -16,9 +16,8 @@ weatherObject.onload = function () {
                 var day = "day" + forecast;
                 var icon = "icon-" + forecast;
 
-
-                document.getElementById('cc-img').setAttribute('src', icon);
-                document.getElementById(icon).setAttribute('"http://openweathermap.org/img/wn/" + weatherInfo[i].weather[0].icon + ".png");
+                document.getElementById(day).innerHTML = weatherData.main.temp_max;
+                document.getElementById(icon).setAttribute("src","http://openweathermap.org/img/wn/" + weatherInfo[i].weather[0].icon + ".png");
 
                 forecast++;
             }

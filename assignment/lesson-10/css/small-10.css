@@ -81,6 +81,7 @@ h2 {
     padding: .5rem;
     box-shadow: 0 0 30px #777;
     color: black;
+    margin-bottom: 0;
 }
 
 h3 {
@@ -116,6 +117,7 @@ td {
     text-align: center;
     color: black;
     background-color: #3fbdee;
+    margin-bottom: 0;
     }
 
     #fire {
@@ -129,6 +131,7 @@ td {
     text-align: center;
     color: white;
     background-color: #003679;
+    margin-top: 0;
     
     
 }
@@ -147,9 +150,11 @@ footer {
     font-size: 16px; 
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: #002458;
-    
+   
 }
-
+ a {
+        color: pink;
+    }
 .grid {
     display: grid;
     grid-template-columns: 1fr;

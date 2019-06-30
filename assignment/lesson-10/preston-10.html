@@ -35,7 +35,7 @@
     </nav>
     <main>
 
-        <h2>Preston Idaho</h2>
+        <h2 id="town">Preston Idaho</h2>
         <div class="herodiv">
             <img srcset="images/480_preston.jpg 480w,
                          images/650_preston.jpg 650w,
@@ -65,14 +65,20 @@
                     <th>Sun</th>
                 </tr>
                 <tr>
-                    <td ><img id="cc-img" src="" at=""><br><span id="day1">&deg; F </span></td>
-                    <td><img id="cc-img" src="" at=""><br><span id="day1">&deg; F </span></td>
-                    <td><img id="cc-img" src="" at=""><br><span id="day1">&deg; F </span></td>
-                    <td><img id="cc-img" src="" at=""><br><span id="day1">&deg; F </span></td>
-                    <td><img id="cc-img" src="" at=""><br><span id="day1">&deg; F </span></td>
+                    <td><img id="icon1" src="" at=""><br><span id="day1">&deg; F </span></td>
+                    <td><img id="icon2" src="" at=""><br><span id="day2">&deg; F </span></td>
+                    <td><img id="icon3" src="" at=""><br><span id="day3">&deg; F </span></td>
+                    <td><img id="icon4" src="" at=""><br><span id="day4">&deg; F </span></td>
+                    <td><img id="icon5" src="" at=""><br><span id="day5">&deg; F </span></td>
                 </tr>
             </table>
         </section>
+
+        <section class="eventInfo">
+            <h2>Here is what is happening in Preston.</h2>
+        <ul></ul>
+        </section>        
+
         <article>
             <div class="founders">
                 <img id="fire" srcset="images/320_campfire.jpg 320w,
@@ -117,6 +123,7 @@
     <script src="script/windchill.js"></script>
     <script src="script/presweather.js"></script>
     <script src="script/forecastapi.js"></script>
+    <script src="script/json.js"></script>
 </body>
 
 </html>

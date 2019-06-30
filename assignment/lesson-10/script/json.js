@@ -7,38 +7,67 @@ request.send();
 request.onload = function () {
     var townData = request.response;
     showData(townData);
+    showEvents(townData);
 }
 
 function showData(jsonObj) {
     var towns = jsonObj['towns'];
     var output = [];
     for (var i = 0; i < towns.length; i++) {
-                  if (towns[i].name == "Preston" || towns[i].name =="Soda Springs" || towns[i].name =="Fish Haven") {
-                output.push(towns[i]);
+        if (towns[i].name == "Preston" || towns[i].name == "Soda Springs" || towns[i].name == "Fish Haven") {
+            output.push(towns[i]);
+
+            var myArticle = document.createElement('article');
+            myArticle.className = "townData";
+            var myH2 = document.createElement('h2');
+            var myPara1 = document.createElement('p');
+            var myPara2 = document.createElement('p');
+            var myPara3 = document.createElement('p');
+            var myPara4 = document.createElement('p');
+
+            myH2.textContent = towns[i].name;
+            myPara1.textContent = 'Motto: ' + towns[i].motto;
+            myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
+            myPara3.textContent = 'Current Population: ' + towns[i].currentPopulation;
+            myPara4.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
+
+
+            myArticle.appendChild(myH2);
+            myArticle.appendChild(myPara1);
+            myArticle.appendChild(myPara2);
+            myArticle.appendChild(myPara3);
+            myArticle.appendChild(myPara4);
+
+            var tn = document.getElementById(towns[i].name)
+
+            tn.appendChild(myArticle);
+
+        }
+    }
+}
+
+function showEvents(jsonObj) {
+    var towns = jsonObj['towns'];
+    var townNames = [document.getElementById("town").innerHTML];
+    for (var i = 0; i < towns.length; i++) {
+        for (var x = 0; x, townNames.length; x++) {
+            if (towns[i].name == townNames[x]) {
 
                 var myArticle = document.createElement('article');
                 myArticle.className = "townData";
-                var myH2 = document.createElement('h2');
-                var myPara1 = document.createElement('p');
-                var myPara2 = document.createElement('p');
-                var myPara3 = document.createElement('p');
-                var myPara4 = document.createElement('p');
 
-                myH2.textContent = towns[i].name;
-                myPara1.textContent = 'Motto: ' + towns[i].motto;
-                myPara2.textContent = 'Year Founded: ' + towns[i].yearFounded;
-                myPara3.textContent = 'Current Population: ' + towns[i].currentPopulation;
-                myPara4.textContent = 'Average Rainfall: ' + towns[i].averageRainfall;
+                var myArticle = document.createElement('article');
+                myArticle.className = "townData";
+                var myList = document.createElement('ul');
 
-                myArticle.appendChild(myH2);
-                myArticle.appendChild(myPara1);
-                myArticle.appendChild(myPara2);
-                myArticle.appendChild(myPara3);
-                myArticle.appendChild(myPara4);
-                var tn = document.getElementById(towns[i].name)  
-             
-                tn.appendChild(myArticle);
+                myPara5.textContent = 'Events ' + towns[i].events;
 
+                myArticle.appendChild(myPara5);
+                var ev = document.getElementById(towns[i].events)
+
+                ev.appendChild(myArticle);
             }
         }
     }
+}
+

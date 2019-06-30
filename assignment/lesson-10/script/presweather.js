@@ -7,6 +7,14 @@ weatherRequest.onload = function () {
     let weatherData = JSON.parse(weatherRequest.responseText);
     console.log(weatherData);
 
+    var t = weatherData.main.temp;
+    var s = weatherData.wind.speed;
+
+    var e = Math.pow(s, 0.16);
+    var f = 35.74 + 0.6215 * t - 35.75 * e + 0.4275 * t * e;
+    f = Math.round(f);
+    document.getElementById("result").innerHTML = f;
+
     
     document.getElementById('high').innerHTML = weatherData.main.temp_max;
     document.getElementById('humidity').innerHTML = weatherData.main.humidity;
@@ -15,6 +23,6 @@ weatherRequest.onload = function () {
 
     let description = weatherData.weather[0].description;
 
-    document.getElementById('cc-img').setAttribute('src', icon);
-    document.getElementById('current').setAttribute('alt', description);
+    
+    document.getElementById('current').innerHTML = description;
 }
