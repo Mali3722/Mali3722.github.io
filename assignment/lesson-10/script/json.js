@@ -7,7 +7,6 @@ request.send();
 request.onload = function () {
     var townData = request.response;
     showData(townData);
-    showEvents(townData);
 }
 
 function showData(jsonObj) {
@@ -24,6 +23,7 @@ function showData(jsonObj) {
             var myPara2 = document.createElement('p');
             var myPara3 = document.createElement('p');
             var myPara4 = document.createElement('p');
+            var myList = document.createElement('ul');
 
             myH2.textContent = towns[i].name;
             myPara1.textContent = 'Motto: ' + towns[i].motto;
@@ -45,29 +45,17 @@ function showData(jsonObj) {
         }
     }
 }
+            var myList = document.createElement('ul');
+            myH2.textContent = 'Events: ';
+            myPara5.textContent = 'Events ' + towns[i].events;
+            myArticle.appendChild(myPara5); 
 
-function showEvents(jsonObj) {
-    var towns = jsonObj['towns'];
-    var townNames = [document.getElementById("town").innerHTML];
-    for (var i = 0; i < towns.length; i++) {
-        for (var x = 0; x, townNames.length; x++) {
-            if (towns[i].name == townNames[x]) {
-
-                var myArticle = document.createElement('article');
-                myArticle.className = "townData";
-
-                var myArticle = document.createElement('article');
-                myArticle.className = "townData";
-                var myList = document.createElement('ul');
-
-                myPara5.textContent = 'Events ' + towns[i].events;
-
-                myArticle.appendChild(myPara5);
-                var ev = document.getElementById(towns[i].events)
-
-                ev.appendChild(myArticle);
-            }
-        }
-    }
+            var events = towns[i].events;
+            for (var j = "0"; j < towns.length; j++) {
+            var listItem = document.createElement('li');
+            listItem.textContent = events[j];
+            var myList =document.getElementById(towns[i].events)
+            myList.appendChild(listItem);
 }
+
 

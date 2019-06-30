@@ -197,12 +197,13 @@ fieldset {
     
 }
  .container58 { /*index page main boxes*/
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 5px;
+    padding: 5px;
     max-width: 1000px;
     margin: auto;
-    flex-flow: row;
     background-color: #777;
-    padding: 20px;
     color: black;
     text-align: center;
      }
