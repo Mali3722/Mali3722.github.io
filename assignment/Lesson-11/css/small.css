@@ -1,5 +1,5 @@
 body{
-    background: whitesmoke;
+    background: #e7f5f9;
     box-sizing: border-box;
  
 }
@@ -35,6 +35,10 @@ h1 {
     font-family: Arial, Helvetica, sans-serif; 
     color: white; 
 }
+.active {
+    display: inline; 
+    color: yellow;
+}
 nav { margin: 0 auto; max-width: 1000px; background-color: #3fbdee; }
 
     .navigation { list-style: none; text-align: center; }
@@ -44,8 +48,6 @@ nav { margin: 0 auto; max-width: 1000px; background-color: #3fbdee; }
     .navigation a:hover {color:#fff; background-color: rgba(97, 8, 38, 0.534); font-weight: 700;
 }
 .responsive li {display: block;}
-
-.active {display: inline;color: #003679} 
 
 .navigation {
     margin: 0;
@@ -110,6 +112,7 @@ td {
     display: block;
     width: fit-content;
     margin: auto;
+    background-color: grey
 
 }
 
@@ -127,6 +130,15 @@ td {
         height: 10em;
         margin: 10px;
     }
+    
+    #events {
+    text-align: center;
+    font-size: 20px;
+    list-style-type: none;
+    margin: 0;
+    padding: 0; 
+    
+}
 .map {
     text-align: center;
     color: white;
