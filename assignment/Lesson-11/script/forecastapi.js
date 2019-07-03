@@ -8,16 +8,16 @@ weatherObject.onload = function () {
     console.log(weatherInfo);
 
     var forecast = 1;
-    for (i = 0; i < weatherInfo; i++) {
+    for (i = 0; i < weatherInfo.list.length; i++) {
         if (weatherInfo.list[i].dt_txt.includes('18:00:00')) {
-            if (forcast <= 5) {
+            if (forecast <= 5) {
 
 
                 var day = "day" + forecast;
-                var icon = "icon-" + forecast;
+                var icon = "icon" + forecast;
 
-                document.getElementById(day).innerHTML = weatherData.main.temp_max;
-                document.getElementById(icon).setAttribute("src","http://openweathermap.org/img/wn/" + weatherInfo[i].weather[0].icon + ".png");
+                document.getElementById(day).innerHTML = weatherInfo.list[i].main.temp_max;
+                document.getElementById(icon).setAttribute("src","http://openweathermap.org/img/wn/" + weatherInfo.list[i].weather[0].icon + ".png");
 
                 forecast++;
             }
