@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southern Idaho Weather</title>
+    <meta name="description" content="Southern_Idho_Weather_Preston, Idaho weather information">
+    <link rel="stylesheet" href="css/normalized.css">
+    <link rel="stylesheet" href="css/small-10.css">
+    <link rel="stylesheet" href="css/medium-10.css">
+    <link rel="stylesheet" href="css/large-10.css">
+    <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="container">
+        <img id="logo" src="images/sun.png" alt="Sun Logo">
+        <section class="headings">
+            <h1>Southern Idaho Weather</h1>
+            <h2>Where the sun goes to play!</h2>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li class="active"><a href="index-10.html">Home</a></li>
+            <li><a href="preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter-10.html">Storm Center</a></li>
+            <li><a href="gallery-10.html">Gallery</a></li>
+        </ul>
+    </nav>
+
+    <h2>Welcome to the Southern Idaho Weather Page</h2>
+    <div class="welcome">
+        <img srcset="images/320_fly-fishing-idaho.jpg 320w,
+                     images/480_fly-fishing-idaho.jpg 480w,
+                     images/800_fly-fishing-idaho.jpg 800w" sizes="(max-width:480px) 280px,
+                      (max-width: 650px) 440px,
+                     1000px" src="images/320_fly-fishing-idaho.jpg" alt="Fly Fishing">
+        <p>Looking for a great place to visit? Want to explore the home of Napoleon Dynamite?
+            Or try your hand at fishing? We have all the information you need. We will also
+            let you know what the weather will be like. Enjoy your stay in Southern Idaho!</p>
+    </div>
+    <h2>Town and Event Information</h2>
+    <main class="indpg">
+        <div class="container58">
+            <section class="box1" id="Preston">
+                <img src="images/PinkTown.jpg" alt="Town of Preston">
+            </section>
+            <section class="box1" id="Soda Springs">
+                <img src="images/mttown.jpg" alt="Town of Soda Springs">
+            </section>
+
+            <section class="box1" id="Fish Haven">
+                <img src="images/smtown.jpg" alt="Town of Fish Haven">
+            </section>
+
+        </div>
+    </main>
+    <div class="indmap">
+        <h3 class="map">Southern Idaho Weather</h3>
+        <p>30 N 1st<br>
+            Preston, ID 83263
+            999.999.9999<br>
+            southernidahoweather@siw.com
+        </p>
+    </div>
+    <footer>
+        <p>&copy; Southern Idaho Weather | Attributions | Brook Phipps | <span id="todaysdate"></span></p>
+    </footer>
+    <script src="script/currentdate.js"></script>
+    <script src="script/json.js"></script>
+
+</body>
+
+</html>

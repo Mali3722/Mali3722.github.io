@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southern Idaho Weather</title>
+    <meta name="description" content="Southern_Idho_Weather_Preston, Idaho weather information">
+    <link rel="stylesheet" href="css/normalized.css">
+    <link rel="stylesheet" href="css/small-10.css">
+    <link rel="stylesheet" href="css/medium-10.css">
+    <link rel="stylesheet" href="css/large-10.css">
+    <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="ppcontainer">
+        <img id="logo" src="images/sun.png" alt="Sun Logo">
+        <section class="headings">
+            <h1 class="mt">Southern Idaho Weather</h1>
+            <h2 class="mts">Where the sun goes to play!</h2>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index-10.html">Home</a></li>
+            <li class="active"><a href="preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter-10.html">Storm Center</a></li>
+            <li><a href="gallery-10.html">Gallery</a></li>
+        </ul>
+    </nav>
+    <main>
+
+        <h2 id="town">Preston Idaho</h2>
+        <div class="herodiv">
+            <img srcset="images/480_preston.jpg 480w,
+                         images/650_preston.jpg 650w,
+                         images/800_preston.jpg 800w" sizes="(max-width:480px) 280px,
+                           (max-width: 650px) 440px,
+                           1000px" src="images/320_preston.jpg" alt="Preston Idaho">
+            <section class="weathersummary">
+                <h3>Weather Summary</h3>
+                <p>Currently: <span id="current"></span></p>
+                <p>High: <span id="high"></span></p>
+                <p>Windchill:<span id="result"></span></p>
+                <p>Humidity: <span id="humidity"></span></p>
+                <p>Wind Speed: <span id="speed"></span></p>
+                         
+            </section>
+        </div>
+
+        <section>
+            <h2>5 Day Forcast</h2>
+            <table class="five">
+
+                <tr>
+                    <th>Wed</th>
+                    <th>Thur</th>
+                    <th>Fri</th>
+                    <th>Sat</th>
+                    <th>Sun</th>
+                </tr>
+                <tr>
+                    <td><img id="icon1" src="" at=""><br><span id="day1">&deg; F </span></td>
+                    <td><img id="icon2" src="" at=""><br><span id="day2">&deg; F </span></td>
+                    <td><img id="icon3" src="" at=""><br><span id="day3">&deg; F </span></td>
+                    <td><img id="icon4" src="" at=""><br><span id="day4">&deg; F </span></td>
+                    <td><img id="icon5" src="" at=""><br><span id="day5">&deg; F </span></td>
+                </tr>
+            </table>
+        </section>
+
+        <section>
+            <h2>Here is what is happening in Preston.</h2>
+        <ul id="Preston">Event information</ul>
+        </section>        
+
+        <article>
+            <div class="founders">
+                <img id="fire" srcset="images/320_campfire.jpg 320w,
+                                       images/480_campfire.jpg 480w,
+                                       images/800_campfire.jpg 800w" sizes="(max-width:320px) 280px,
+                                       (max-width: 480px) 440px,
+                                       1000px" src="images/320_campfire.jpg" alt="Preston Idaho"> 
+                <section class="story">
+                    <h3 class="story">Founders Day Fresco</h3>
+                    <h4 class="story">by Janica Juarez</h4>
+                    <p class="story">I was recently reflecting upong the founders day event held at
+                        Foundation Park each year. I have been taking the frestival for
+                        granted and have not been propertly engaging in perhaps the most
+                        popular community event of the year. In response, I contacted Ms.
+                        Sharon via email and expressed my desire to serve on the event
+                        committee. Well, you guessed it, the phone rings almost
+                        immediately and she promptly asks me to be teh event
+                        committe chair. Literally, good grief! My apprecation for the
+                        years of dedicated, generouse servie of volunteers and sponsers
+                        has escalated beyond what I thougth I could feel for such a thing
+                        and...
+                    </p>
+                </section>
+            </div>
+            <div class="map">
+                <h3 class="map">Southern Idaho Weather</h3>
+                <p>30 N 1st<br>
+                    Preston, ID 83263
+                    999.999.9999<br>
+                    southernidahoweather@siw.com
+                   <br>Weather information provided by Open Weather.
+                </p>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; Southern Idaho Weather | Attributions | Brook Phipps | <span id="todaysdate"></span>
+        <a href="https://openweathermap.org/city">Open Weather</a></p>
+    </footer>
+    <script src="script/adjustrating.js"></script>
+    <script src="script/currentdate.js"></script>
+    <script src="script/windchill.js"></script>
+    <script src="script/presweather.js"></script>
+    <script src="script/forecastapi.js"></script>
+    <script src="script/json.js"></script>
+</body>
+
+</html>

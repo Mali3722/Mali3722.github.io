@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Southern Idaho Weather</title>
+    <meta name="description" content="Southern_Idho_Weather_Preston, Idaho weather information">
+    <link rel="stylesheet" href="css/normalized.css">
+    <link rel="stylesheet" href="css/small-10.css">
+    <link rel="stylesheet" href="css/medium-10.css">
+    <link rel="stylesheet" href="css/large-10.css">
+    <link href="https://fonts.googleapis.com/css?family=Handlee&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="container">
+        <img id="logo" src="images/sun.png" alt="Sun Logo">
+        <section class="headings">
+            <h1>Southern Idaho Weather</h1>
+            <h2>Where the sun goes to play!</h2>
+        </section>
+    </header>
+
+    <nav>
+        <div class="navigation">
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="index-10.html">Home</a></li>
+            <li><a href="preston-10.html">Preston</a></li>
+            <li><a href="#">Soda Springs</a></li>
+            <li><a href="#">Fish Haven</a></li>
+            <li><a href="stormcenter-10.html">Storm Center</a></li>
+            <li class="active"><a href="gallery-10.html">Gallery</a></li>
+        </div>
+    </nav>
+
+    <div class="grid-container-gallery">
+        <div class="1">
+            <img srcset="images/320_rain.jpg 320w,
+                     images/480_rain.jpg 480w,
+                     images/800_rain.jpg 800w" sizes="(max-width:320px) 280px,
+      (max-width: 480px) 440px,
+      1000px" src="images/320_rain.jpg" alt="Rain">
+        </div>
+        <div class="2">
+            <img srcset="images/320_rainbow.jpg 320w,
+                     images/480_rainbow.jpg 480w,
+                     images/800_rainbow.jpg 800w" sizes="(max-width:320px) 280px,
+      (max-width: 480px) 440px,
+      1000px" src="images/320_rainbow.jpg" alt="Rainbow">
+        </div>
+        <div class="3">
+            <img srcset="images/320_snow.jpg 320w,
+                    images/480_snow.jpg 480w,
+                    images/800_snow.jpg 800w" sizes="(max-width:320px) 280px,
+          (max-width: 480px) 440px,
+          1000px" src="images/480_snow.jpg" alt="Snow">
+        </div>
+        <div class="4">
+            <img srcset="images/320_tornado.jpg 320w,
+                     images/480_tornado.jpg 480w,
+                     images/800_tornado.jpg 800w" sizes="(max-width:320px) 280px,
+          (max-width: 480px) 440px,
+          1000px" src="images/320_tornado.jpg" alt="Tornado">
+        </div>
+        <div class="5">
+            <img srcset="images/320_tree_cloud.jpg 320w,
+                     images/480_tree_cloud.jpg 480w,
+                     images/800_tree_cloud.jpg 800w" sizes="(max-width:320px) 280px,
+      (max-width: 480px) 440px,
+      1000px" src="images/320-tree_cloud.jpg" alt="Tree in a storm">
+        </div>
+        <div class="6">
+            <img srcset="images/320_storm_clouds.jpg 320w,
+                     images/480_storm_clouds.jpg 480w,
+                     images/800_storm_clouds 800w" sizes="(max-width:320px) 280px,
+      (max-width: 480px) 440px,
+      1000px" src="images/320_storm_clouds.jpg" alt="Storm Clouds">
+        </div>
+        <footer>
+            <p>&copy; Southern Idaho Weather | Attributions | Brook Phipps | <span id="todaysdate"></span></p>
+        </footer>
+        <script src="script/adjustrating.js"></script>
+        <script src="script/currentdate.js"></script>
+        <script src="script/windchill.js"></script>
+</body>
+
+</html>
