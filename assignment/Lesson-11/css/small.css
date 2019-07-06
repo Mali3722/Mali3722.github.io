@@ -231,16 +231,14 @@ fieldset {
     float: left;
     background-color: white;
     padding: 1em;
-    font-size: 12px;
+    font-size: 16px;
     color: black;
     bottom: 1rem;
     align-self: flex-end;
     text-align: center;
     margin: 10px;
-    margin-bottom: auto;
-    max-width: 200px;
     align-self: stretch;
-    height: 100%;
+   
     }
 
    .box1 img  {
