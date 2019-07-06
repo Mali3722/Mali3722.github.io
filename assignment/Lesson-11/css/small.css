@@ -35,10 +35,7 @@ h1 {
     font-family: Arial, Helvetica, sans-serif; 
     color: white; 
 }
-li.active {
-    display: inline; 
-    color: yellow;
-}
+
 nav { margin: 0 auto; max-width: 1000px; background-color: #3fbdee; }
 
     .navigation { list-style: none; text-align: center; }
@@ -46,7 +43,7 @@ nav { margin: 0 auto; max-width: 1000px; background-color: #3fbdee; }
     .navigation li {display: none;}
     .navigation a {display:block; color:black; padding: .75em; text-align: center; text-decoration: none;}
     .navigation a:hover {color:#fff; background-color: rgba(97, 8, 38, 0.534); font-weight: 700;}
-        .navigation li.active {color:#fff; background-color: rgba(97, 8, 38, 0.534); font-weight: 700;}   
+        .navigation li.active {color:#fff; background-color: #ffd203; font-weight: 700;}   
 
 .responsive li {display: block;}
 
@@ -62,9 +59,10 @@ h2 {
     font-size:20px; 
     text-shadow: 3px 3px 5px #777;
    }
-.town {
+#town {
     width: 90%;
     margin: auto;
+    list-style-type: none;
 }
 .herodiv {
     position: relative;
@@ -127,8 +125,7 @@ td {
     #fire {
         display: block;
         float: right;
-        width: 10em;
-        height: 10em;
+        height: 8em;
         margin: 10px;
     }
     
@@ -147,8 +144,7 @@ td {
     margin-top: 0;
     }
   #area {
-    position: relative; 
-    
+      float: left;
       width: 15em;
       height: 15em;
       margin: 20px;
@@ -157,7 +153,7 @@ td {
 .story { /*Preston page Founders day Fresoc*/
     color:white;
     text-align: justify;
-    margin: 10px;
+    margin: 0px;
     max-width: 1000px;
 }
 footer {
