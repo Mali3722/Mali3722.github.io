@@ -45,8 +45,9 @@ nav { margin: 0 auto; max-width: 1000px; background-color: #3fbdee; }
     .navigation li:first-child {display: flex;}
     .navigation li {display: none;}
     .navigation a {display:block; color:black; padding: .75em; text-align: center; text-decoration: none;}
-    .navigation a:hover {color:#fff; background-color: rgba(97, 8, 38, 0.534); font-weight: 700;
-}
+    .navigation a:hover {color:#fff; background-color: rgba(97, 8, 38, 0.534); font-weight: 700;}
+        .navigation li.active {color:#fff; background-color: rgba(97, 8, 38, 0.534); font-weight: 700;}   
+
 .responsive li {display: block;}
 
 .navigation {
@@ -250,4 +251,9 @@ fieldset {
     text-align: center;
     color: white;
     background-color: #003679;
+}
+.grid-container-gallery {
+    max-width: 1000px;
+    margin: auto;
+    padding: .5em;
 }

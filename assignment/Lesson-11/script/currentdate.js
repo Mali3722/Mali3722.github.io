@@ -4,3 +4,4 @@ function toggleMenu() {
 
 var today = new Date();
 document.getElementById("todaysdate").innerHTML=today;
+
