@@ -144,9 +144,15 @@ td {
     color: white;
     background-color: #003679;
     margin-top: 0;
+    }
+  #area {
+    position: relative; 
     
-    
-}
+      width: 15em;
+      height: 15em;
+      margin: 20px;
+      margin-bottom: 0;
+  }  
 .story { /*Preston page Founders day Fresoc*/
     color:white;
     text-align: justify;
