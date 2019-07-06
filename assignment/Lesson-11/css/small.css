@@ -15,17 +15,17 @@ header {
     box-shadow: 0 0 10px #777;
 }
 .ppcontainer { /* tile and logo*/
-    display: block;
+    display: flex;
     flex-direction: row;
-    justify-content: center
+    justify-content: center;
     /*margin: .5rem auto;*/
 }
 
 #logo {
     display: block;
     float: left;
-    width: 3em;
-    height: 3em;
+    width: 5em;
+    height: 5em;
     margin: 10px;
 }
 
@@ -115,8 +115,10 @@ td {
 
 }
 .founders {
-    text-align: center;
-    color: black;
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
     background-color: #3fbdee;
     margin-bottom: 0;
     padding: 1em;
@@ -124,8 +126,6 @@ td {
     }
 
     #fire {
-        display: block;
-        float: right;
         height: 10em;
         margin: 10px;
     }
@@ -139,17 +139,22 @@ td {
        
 }
 .map {
-    text-align: center;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center; 
+    text-align: left;
     color: white;
     background-color: #003679;
     margin: auto;
+    font-size: 18px;
     }
-  #area {
-      float: left;
+  .area {
+      padding-top: .5em;
+      padding-bottom: .5em;
+      padding-right: 3em;
       width: 15em;
-      max-width: 100%;
-      max-height: 100%;
-      margin-bottom: 0;
+      
   }  
 .story { /*Preston page Founders day Fresoc*/
     color:white;
