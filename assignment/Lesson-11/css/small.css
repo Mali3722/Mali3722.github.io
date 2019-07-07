@@ -154,8 +154,10 @@ td {
       padding-bottom: .5em;
       padding-right: 3em;
       width: 15em;
-      
-  }  
+        }  
+#contact {
+    max-width: 100%;
+    }
 .story { /*Preston page Founders day Fresoc*/
     color:white;
     text-align: justify;
@@ -190,6 +192,9 @@ footer {
     width: 100%;
 }
 fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     background-color:#002458;
     color: white; 
     font-size: 20px;
