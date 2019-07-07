@@ -191,17 +191,20 @@ footer {
 .grid img {
     width: 100%;
 }
+main h1 {
+    color: #003679;
+}
 fieldset {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    background-color:#002458;
-    color: white; 
+    color: #003679; 
     font-size: 20px;
     margin: auto;
     padding: 1px;
-    max-width: 1000px;
-} 
+    max-width: fit-content;
+    border: none;
+    } 
 
 .welcome {
     position: relative;
@@ -268,3 +271,7 @@ fieldset {
     margin: auto;
     padding: .5em;
 }
+label {
+    display: block;
+    padding: 10px;
+    }
