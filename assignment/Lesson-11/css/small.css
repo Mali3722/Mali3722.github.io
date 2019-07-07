@@ -1,5 +1,5 @@
 body{
-    background: #e7f5f9;
+    background-color: white;
     box-sizing: border-box;
  
 }
@@ -111,7 +111,7 @@ td {
     display: block;
     width: fit-content;
     margin: auto;
-    background-color: #e8d995
+    background-color: #ffea8c
 
 }
 .founders {
