@@ -268,10 +268,16 @@ fieldset {
     background-color: #003679;
 }
 .grid-container-gallery {
+    grid-template-columns: 1fr 1fr 1fr;
     max-width: 1000px;
     margin: auto;
     padding: .5em;
-}
+} 
+.photo {
+        display: grid;
+        grid-column-gap: 5px;
+        padding: 1px; 
+    }
 label {
     display: block;
     padding: 10px;
@@ -281,3 +287,4 @@ label {
         text-align: center;
         padding: 60px;
     }
+   
