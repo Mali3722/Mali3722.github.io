@@ -148,6 +148,7 @@ td {
     background-color: #003679;
     margin: auto;
     font-size: 18px;
+    max-width: 1000px;
     }
   .area {
       padding-top: .5em;
