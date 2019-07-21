@@ -41,3 +41,12 @@ header {
 .navigation {
     margin: 0;
 }
+footer {
+    text-align: center;
+    font-size: 25px;
+    font-family: 'marcellus', 'cyrsive', 'Lucida Sans';
+    background-color: #276b7d;
+    color: white;
+    margin: auto;
+    max-width: 1000px;
+}
