@@ -12,3 +12,32 @@ header {
     margin: auto;
     max-width: 1000px;
     }
+
+    .topcontainer { /*title and logo*/ 
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    #logo {
+        display: block;
+        float: left;
+        width: 3em;
+        height: 3em;
+        margin: 10px;
+    }
+
+    nav { margin: 0 auto; max-width: 1000px; background-color: #a9cecf; }
+
+    .navigation { list-style: none; text-align: center; }
+    .navigation li:first-child {display: flex;}
+    .navigation li {display: none;}
+    .navigation a {display:block; color:black; padding: .75em; text-align: center; text-decoration: none;}
+    .navigation a:hover {color:#fff; background-color: rgba(97, 8, 38, 0.534); font-weight: 700;}
+        .navigation li.active {color:#fff; background-color: #ffd203; font-weight: 700;}   
+
+.responsive li {display: block;}
+
+.navigation {
+    margin: 0;
+}
