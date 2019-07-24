@@ -3,3 +3,7 @@
     .navigation li {display: inline-block; margin-right: 11px;}
     .navigation li a {color: rgb(31, 16, 29);}
     }
+    .free { /* information above the footer*/
+       display: block;
+        max-width: 1000px;
+    }

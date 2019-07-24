@@ -10,6 +10,7 @@ header {
     background-color: #276b7d;
     color: white;
     margin: auto;
+    padding: 1px;
     max-width: 1000px;
     }
 
@@ -49,4 +50,12 @@ footer {
     color: white;
     margin: auto;
     max-width: 1000px;
+}
+.free { /* information above the footer*/
+    display: flex;
+    flex-direction: column;
+    background-color: #a9cecf;
+    text-align: left;
+    max-width: 1000px;
+
 }
