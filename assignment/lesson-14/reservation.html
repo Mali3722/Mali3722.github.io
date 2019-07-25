@@ -34,9 +34,63 @@
         </ul>
     </nav>
 
-    <article>
+    <main>
+        <form action="thanks.html" method="get">
+            <fieldset class="box1">
+                <h1>Book your next stay with us!</h1>
+                <h2>Personal Information</h2>
+                <label>Full Name*<br><input type="text" name="fullname" required pattern="[A-Z a-z]{5,}"></label><br>
 
-    </article>
+                <label for="t2">Email<br>
+                    <input type="email" id="t2" name="email" placeholder="demo@email.com"></label><br>
+
+                <label>Phone Number*<br>
+                    <input type="tel" id="t3" name="phone number" required></label><br>
+
+                <label>State/Country*<br>
+                    <input type="text" id="t4" required name="state/Counrty"></label>
+            
+            <br>
+            <br>
+           <h2>Hotel Reqest Details</h2>
+                <label>Location*<br><input type="text" name="location"></label><br>    
+
+                <label>Check In Date<br>
+                    <input type="date" id="t5" name="storm date"></label>
+                    <br>
+                <label>Check Out Date<br>
+                    <input type="date" id="t5" name="storm date"></label><br>
+                <label>Number of Rooms<br>
+                    <input type="list" name="list" list="stormlist">
+                    <datalist id="stormlist">
+                        <option value="1"></option>
+                        <option value="2"></option>
+                        <option value="3"></option>
+                        <option value="4"></option>
+                        <option value="5"></option>
+                        </label><br>
+
+                            <label>Room<br>
+                                <select class="selectregion" name="region">
+                                    <option selected="true" disabled="disabled">Room Type</option>
+                                    <option value="Guest Room, 2 Double">Guest Room, 2 Double</option>
+                                    <option value="Guest Room, 2 Queen">Guest Room, 2 Queen</option>
+                                    <option value="Guest Room, Single Queen">Guest Room, Single Queen</option>
+                                    <option value="Guest Room, Single King">Guest Room, Single King</option>
+                                    <option value="Guest Room, Executive Suite">Guest Room, Executive Suite</option>
+                                    <option value="Long Term Stay with Kitchette">Long Term Stay with Kitchette</option>
+                                </select></label><br>
+                            <label class="scom" for="t6">Special Accommodations/Comments<br></label>
+                            <textarea id="t6" name="msg" maxlength="140" rows="5"></textarea><br>
+
+                            <p>
+                                <input type="submit" value="Submit" />
+
+                            </p>
+
+            </fieldset>
+        </form>
+    </main>
     </main>
     <footer>
         <p>&copy; Temple Inn & Suites | Brook Phipps | <span id="date"></span></p>

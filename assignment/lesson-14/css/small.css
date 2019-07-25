@@ -76,5 +76,15 @@ footer {
     background-color: #a9cecf;
     text-align: left;
     max-width: 1000px;
-
 }
+fieldset {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: #003679; 
+    font-size: 20px;
+    margin: auto;
+    padding: 1px;
+    max-width: fit-content;
+    border: 1em;
+    } 
