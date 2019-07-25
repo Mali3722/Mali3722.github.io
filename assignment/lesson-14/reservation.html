@@ -39,13 +39,13 @@
             <fieldset class="box1">
                 <h1>Book your next stay with us!</h1>
                 <h2>Personal Information</h2>
-                <label>Full Name*<br><input type="text" name="fullname" required pattern="[A-Z a-z]{5,}"></label><br>
+                <label>Full Name*<br><input type="text" name="fullname" required pattern="[A-Z a-z]{5,}"></label>
 
                 <label for="t2">Email<br>
-                    <input type="email" id="t2" name="email" placeholder="demo@email.com"></label><br>
+                    <input type="email" id="t2" name="email" placeholder="demo@email.com"></label>
 
                 <label>Phone Number*<br>
-                    <input type="tel" id="t3" name="phone number" required></label><br>
+                    <input type="tel" id="t3" name="phone number" required></label>
 
                 <label>State/Country*<br>
                     <input type="text" id="t4" required name="state/Counrty"></label>
@@ -53,25 +53,25 @@
             <br>
             <br>
            <h2>Hotel Reqest Details</h2>
-                <label>Location*<br><input type="text" name="location"></label><br>    
+                <label>Location*<br><input type="text" required name="location"></label>    
 
-                <label>Check In Date<br>
-                    <input type="date" id="t5" name="storm date"></label>
-                    <br>
-                <label>Check Out Date<br>
-                    <input type="date" id="t5" name="storm date"></label><br>
-                <label>Number of Rooms<br>
-                    <input type="list" name="list" list="stormlist">
+                <label>Check In Date*<br>
+                    <input type="date" id="t5" required name="storm date"></label>
+                   
+                <label>Check Out Date*<br>
+                    <input type="date" id="t5" required name="storm date"></label>
+                <label>Number of Rooms*<br>
+                    <input type="list" name="list" required list="stormlist">
                     <datalist id="stormlist">
                         <option value="1"></option>
                         <option value="2"></option>
                         <option value="3"></option>
                         <option value="4"></option>
                         <option value="5"></option>
-                        </label><br>
+                        </label>
 
-                            <label>Room<br>
-                                <select class="selectregion" name="region">
+                            <label>Room*<br>
+                                <select class="selectregion" required name="region">
                                     <option selected="true" disabled="disabled">Room Type</option>
                                     <option value="Guest Room, 2 Double">Guest Room, 2 Double</option>
                                     <option value="Guest Room, 2 Queen">Guest Room, 2 Queen</option>
@@ -79,7 +79,7 @@
                                     <option value="Guest Room, Single King">Guest Room, Single King</option>
                                     <option value="Guest Room, Executive Suite">Guest Room, Executive Suite</option>
                                     <option value="Long Term Stay with Kitchette">Long Term Stay with Kitchette</option>
-                                </select></label><br>
+                                </select></label>
                             <label class="scom" for="t6">Special Accommodations/Comments<br></label>
                             <textarea id="t6" name="msg" maxlength="140" rows="5"></textarea><br>
 
