@@ -88,3 +88,12 @@ fieldset {
     max-width: fit-content;
     border: 1em;
     } 
+    label {
+        display: block;
+        padding: 10px;
+        }
+        .thank {
+            font-size: 30px;
+            text-align: center;
+            padding: 60px;
+        }
