@@ -28,7 +28,6 @@
             <li><a href="temple.html">Temple</a></li>
             <li class="active"><a href="reservation.html">Reservations</a></li>
             <li><a href="services.html">Services</a></li>
-            <li><a href="">Missionaries</a></li>
             <li><a href="contact.html">Contact</a></li>
 
         </ul>
@@ -49,50 +48,48 @@
 
                 <label>State/Country*<br>
                     <input type="text" id="t4" required name="state/Counrty"></label>
-            
-            <br>
-            <br>
-           <h2>Room Details</h2>
-                <label>Location*<br><input type="text" required name="location"></label>    
+
+                <br>
+                <br>
+                <h2>Room Details</h2>
+                <label>Location*<br><input type="text" required name="location"></label>
 
                 <label>Check In Date*<br>
-                    <input type="date" id="t5" required name="storm date"></label>
-                   
+                    <input type="date" id="t5" required name="check in date"></label>
+
                 <label>Check Out Date*<br>
-                    <input type="date" id="t5" required name="storm date"></label>
+                    <input type="date" id="t6" required name="check out date"></label>
                 <label>Number of Rooms*<br>
-                    <input type="list" name="list" required list="stormlist">
-                    <datalist id="stormlist">
+                    <input type="list" name="list" required list="list"> </label>
+                    <datalist id="list">
                         <option value="1"></option>
                         <option value="2"></option>
                         <option value="3"></option>
                         <option value="4"></option>
                         <option value="5"></option>
-                        </label>
+                        </datalist>
+               
+                <label>Room*<br>
+                    <select class="selectregion" required name="room">
+                        <option selected="true" disabled="disabled">Room Type</option>
+                        <option value="Guest Room, 2 Double">Guest Room, 2 Double</option>
+                        <option value="Guest Room, 2 Queen">Guest Room, 2 Queen</option>
+                        <option value="Guest Room, Single Queen">Guest Room, Single Queen</option>
+                        <option value="Guest Room, Single King">Guest Room, Single King</option>
+                        <option value="Guest Room, Executive Suite">Guest Room, Executive Suite</option>
+                        <option value="Long Term Stay with Kitchette">Long Term Stay with Kitchette</option>
+                    </select></label>
+                <label class="scom" for="t7">Special Accommodations/Comments<br></label>
+                <textarea id="t7" name="msg" maxlength="140" rows="5"></textarea><br>
 
-                            <label>Room*<br>
-                                <select class="selectregion" required name="region">
-                                    <option selected="true" disabled="disabled">Room Type</option>
-                                    <option value="Guest Room, 2 Double">Guest Room, 2 Double</option>
-                                    <option value="Guest Room, 2 Queen">Guest Room, 2 Queen</option>
-                                    <option value="Guest Room, Single Queen">Guest Room, Single Queen</option>
-                                    <option value="Guest Room, Single King">Guest Room, Single King</option>
-                                    <option value="Guest Room, Executive Suite">Guest Room, Executive Suite</option>
-                                    <option value="Long Term Stay with Kitchette">Long Term Stay with Kitchette</option>
-                                </select></label>
-                            <label class="scom" for="t6">Special Accommodations/Comments<br></label>
-                            <textarea id="t6" name="msg" maxlength="140" rows="5"></textarea><br>
+                <p>
+                    <input type="submit" value="Submit" />
 
-                            <p>
-                                <input type="submit" value="Submit" />
-
-                            </p>
+                </p>
 
             </fieldset>
         </form>
-    </main>
-    </main>
-    <footer>
+    <    <footer>
         <p>&copy; Temple Inn & Suites | Brook Phipps | <span id="date"></span></p>
         <div class="map">
             135 N Broad St.<br>
