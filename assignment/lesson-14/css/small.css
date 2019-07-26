@@ -124,3 +124,24 @@ label {
     display: flex;
     flex-direction: column;
 }  
+.party {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: #3fbdee;
+    margin-bottom: 0;
+    padding: 1em;
+    font-size: 20px;
+    }
+
+    #marriage {
+        height: 10em;
+        margin: 10px;
+    }
+    .reception { /*Preston page Founders day Fresoc*/
+        color:white;
+        text-align: justify;
+        margin: 0px;
+        max-width: 1000px;
+        }
