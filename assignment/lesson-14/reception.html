@@ -35,6 +35,7 @@
     <main>
         <article>
             <div class="party">
+                <h2>Plan the Wedding of your dreams!</h2>
                 <img id="marriage" srcset="images/320_marriage.jpg 320w,
                     images/480_marriage.jpg 480w,
                     images/800_marriage.jpg 800w" sizes="(max-width:480px) 280px,
@@ -48,6 +49,25 @@
                     Don't worry about the set up our staff will take care of everything. Contact us to see how we can
                     make your dreams come true.
                 </p>
+
+                <form action="/action_page.php">
+
+                    <label>Full Name*<br><input type="text" name="fullname" required pattern="[A-Z a-z]{5,}"></label>
+
+                    <label for="t2">Email<br>
+                        <input type="email" id="t2" name="email" placeholder="demo@email.com"></label>
+
+                    <label>Phone Number*<br>
+                        <input type="tel" id="t3" name="phone number" required></label>
+                    <label>Event Date*<br>
+                        <input type="date" id="t5" required name="storm date"></label>
+
+                    <label for="subject">Comment</label>
+                    <textarea id="subject" name="subject" placeholder="Comments.."></textarea><br>
+                    <p>
+                        <input type="submit" value="Submit" />
+
+                    </p>
             </div>
         </article>
     </main>
