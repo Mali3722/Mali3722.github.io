@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1/0">
+    <title>Temple Inn & Suites</title>
+    <meta name="description" content="Temple_Inn_&_Suites_Index,_inn_information">
+    <link rel="stylesheet" href="css/normalized.css">
+    <link rel="stylesheet" href="css/small.css">
+    <link rel="stylesheet" href="css/medium.css">
+    <link rel="stylesheet" href="css/large.css">
+    <link href="https://fonts.googleapis.com/css?family=Marcellus+SC&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="topcontainer">
+        <img id="logo" src="images/logow.png" alt="SLC Temple">
+        <section class="headings">
+            <h1 class="temp">Temple Inn & Suites</h1>
+        </section>
+    </header>
+
+    <nav>
+        <ul class="navigation">
+            <li><a href="#" title="Menu" onclick="toggleMenu()">&#9776; Menu</a></li>
+            <li><a href="home.html">Home</a></li>
+            <li><a href="temple.html">Temple</a></li>
+            <li><a href="reservation.html">Reservation</a></li>
+            <li class="active"><a href="services.html">Services</a></li>
+            <li><a href="contact.html">Contact</a></li>
+
+        </ul>
+    </nav>
+    <main>
+        <article>
+            <div class="senior">
+                <h2>Senior Missionary services.</h2>
+                <img id="marriage" srcset="images/320_missionary_couple.jpg 320w,
+                    images/480_missionary_couple.jpg 480w,
+                    images/800_missionary_couple.jpg 800w" sizes="(max-width:480px) 280px,
+                    (max-width: 650px) 440px,
+                    1000px" src="images/320_missionary_couple.jpg" alt="Bride and Groom">
+                <p class="stay">
+                    We offer long term stay for missionary couples assigned to work in temple. Our 2 bedroom units offer
+                    all the comforts of home. Each unit has a kitchen, laundry and is furnished. Also, when you stay
+                    with us
+                    you have access to all of the ammenities our hotel offers. We also provide 10% discounts for any
+                    family
+                    members that may come to visit.
+                </p>
+                <img id="marriage" srcset="images/320_long_term_stay.jpg 320w,
+                images/480_long_term_stay.jpg 480w,
+                images/800_long_term_staye.jpg 800w" sizes="(max-width:480px) 280px,
+                (max-width: 650px) 440px,
+                1000px" src="images/480_long_term_stay.jpg" alt="Long-term Stay Unit">
+                <form action="/action_page.php">
+
+                    <label>Full Name*<br><input type="text" name="fullname" required pattern="[A-Z a-z]{5,}"></label>
+
+                    <label for="t2">Email<br>
+                        <input type="email" id="t2" name="email" placeholder="demo@email.com"></label>
+
+                    <label>Phone Number*<br>
+                        <input type="tel" id="t3" name="phone number" required></label>
+                    <label>Mission Start Date*<br>
+                        <input type="date" id="t5" required name="storm date"></label>
+                    <label>Mission Departure Date*<br>
+                        <input type="date" id="t5" required name="storm date"></label>
+
+                    <label for="subject">Comment</label>
+                    <textarea id="subject" name="subject" placeholder="Comments.."></textarea><br>
+                    <p>
+                        <input type="submit" value="Submit" />
+
+                    </p>
+            </div>
+        </article>
+    </main>
+    <footer>
+        <p>&copy; Temple Inn & Suites | Brook Phipps | <span id="date"></span></p>
+    </footer>
+</body>
+
+</html>
