@@ -1,7 +1,7 @@
 {
     "temples": [
         {
-            "name": "Fort Collins",
+            "name": "FortCollins",
             "schedule": [
                 "Monday, 12 August 2019 - Monday, 26 August 201",
                 "Saturday, 5 October 2019",
@@ -23,7 +23,7 @@
             ]
         },
         {
-            "name": "Fort Lauderdale",
+            "name": "FortLauderdale",
             "schedule": [
                 "Saturday, 5 October 2019",
                 "Sunday, 27 October 2019 - Monday, 11 November 2019",
@@ -34,7 +34,7 @@
         },
        
         {
-            "name": "Cedar City",
+            "name": "CedarCity",
             "schedule": [
                 "Monday, 2 September 2019",
                 "Saturday, 5 October 2019",

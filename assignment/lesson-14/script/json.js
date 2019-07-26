@@ -13,7 +13,7 @@ function showData(jsonObj) {
     var temples = jsonObj['temples'];
     var output = [];
     for (var i = 0; i < temples.length; i++) {
-        if (temples[i].name == "Barranquilla" || temples[i].name == "Fort Lauderdale" || temples[i].name == "Cedar City" || temples[i].name == "Trujillo") {
+        if (temples[i].name == "Barranquilla" || temples[i].name == "FortLauderdale" || temples[i].name == "CedarCity" || temples[i].name == "Trujillo") {
             output.push(temples[i]);
 
             var myArticle = document.createElement('article');

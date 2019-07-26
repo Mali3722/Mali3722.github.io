@@ -24,5 +24,5 @@ weatherRequest.onload = function () {
     let description = weatherData.weather[0].description;
 
     
-    document.getElementById('current').innerHTML = description;
+    document.getElementById('cccurrent').innerHTML = description;
 }
