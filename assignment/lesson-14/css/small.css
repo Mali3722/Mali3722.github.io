@@ -7,7 +7,7 @@ header {
     text-align: center;
     font-size: 25px;
     font-family: 'marcellus', 'cyrsive', 'Lucida Sans';
-    background-color: #276b7d;
+    background-color: #193207;
     color: white;
     margin: auto;
     padding: 1px;
@@ -28,7 +28,7 @@ header {
         margin: 10px;
     }
 
-    nav { margin: 0 auto; max-width: 1000px; background-color: #a9cecf; }
+    nav { margin: 0 auto; max-width: 1000px; background-color: #c0c7bb; }
 
     .navigation { list-style: none; text-align: center; }
     .navigation li:first-child {display: flex;}
@@ -45,7 +45,7 @@ header {
 .info {/* section with temple info home page*/
     display: flex;
     flex-direction: row;
-    background-color: rgb(71, 69, 61);
+    background-color:#818f77;
     margin-bottom: 0;
     padding: 0;
     font-size: 20px;
@@ -59,6 +59,7 @@ header {
     text-align: left;
     margin: 0px;
     max-width: 1000px;
+    background-color: aquamarine
     }
 footer {
     text-align: center;
