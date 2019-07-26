@@ -42,10 +42,9 @@ header {
 .navigation {
     margin: 0;
 }
-.info {
+.info {/* section with temple info home page*/
     display: flex;
     flex-direction: row;
-    
     background-color: rgb(71, 69, 61);
     margin-bottom: 0;
     padding: 0;
@@ -88,12 +87,66 @@ fieldset {
     max-width: fit-content;
     border: 1em;
     } 
-    label {
-        display: block;
-        padding: 20px;
-        }
-        .thank {
-            font-size: 30px;
-            text-align: center;
-            padding: 60px;
-        }
+label {
+   display: block;
+    padding: 20px;
+    max-width: 100%;
+    }
+.thank {
+    font-size: 30px;
+    text-align: center;
+    padding: 60px;
+    }
+#contact { /*contact page h2*/  
+    text-align: center;
+       }
+.rowc { /*contact page main container*/
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  .columnc {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+.mainc {
+    height: 100px;
+    background-color: #ffd203
+   
+}
+#subject {
+    height: 200px;
+}
+
+.some-page-wrapper {
+    margin: 15px;
+    background-color: red;
+  }
+  
+  .row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+  }
+  
+  .column {
+    display: flex;
+    flex-direction: column;
+    flex-basis: 100%;
+    flex: 1;
+  }
+  
+  .blue-column {
+    background-color: blue;
+    height: 100px;
+  }
+  
+  .green-column {
+    background-color: green;
+    height: 100px;
+  }
+  
