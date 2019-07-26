@@ -13,7 +13,7 @@
        display: block;
         max-width: 1000px;
     }
-    .row {
-        display: block;
+    .ropr {
+        display: flex;
         max-width: 1000px;  
     }

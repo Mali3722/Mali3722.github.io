@@ -100,53 +100,27 @@ label {
 #contact { /*contact page h2*/  
     text-align: center;
        }
-.rowc { /*contact page main container*/
+.topr { /*contact page main container*/
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     width: 100%;
   }
-  .columnc {
-    display: flex;
-    flex-direction: column;
-    flex-basis: 100%;
-    flex: 1;
-  }
-.mainc {
-    height: 100px;
-    background-color: #ffd203
-   
-}
-#subject {
-    height: 200px;
-}
-
-.some-page-wrapper {
-    margin: 15px;
-    background-color: red;
-  }
-  
-  .row {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    width: 100%;
-  }
-  
   .column {
     display: flex;
     flex-direction: column;
     flex-basis: 100%;
     flex: 1;
   }
-  
-  .blue-column {
-    background-color: blue;
+.main {
     height: 100px;
-  }
-  
-  .green-column {
-    background-color: green;
-    height: 100px;
-  }
-  
+    background-color: #ffd203;
+    padding-left: 30px;
+   }
+#subject {
+    height: 40px;
+}
+.map {
+    display: flex;
+    flex-direction: column;
+}  
