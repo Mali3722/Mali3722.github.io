@@ -18,11 +18,11 @@ function showData(jsonObj) {
 
             var myArticle = document.createElement('article');
             myArticle.className = "templeData";
-            var myH2 = document.createElement('h2');
+           /* var myH2 = document.createElement('h2');
             var myPara1 = document.createElement('p');
             var myPara2 = document.createElement('p');
             var myPara3 = document.createElement('p');
-            var myPara4 = document.createElement('p');
+            var myPara4 = document.createElement('p');*/
             var myList = document.createElement('ul');
 
             myH2.textContent = temples[i].name;
@@ -46,8 +46,8 @@ function showData(jsonObj) {
     }
 }
             var myList = document.createElement('ul');
-            myH2.textContent = 'Schedule: ';
-            myPara5.textContent = 'Schedule ' + temples[i].events;
+            /*myH2.textContent = 'Schedule: ';*/
+            /*myPara5.textContent = 'Schedule ' + temples[i].events;*/
             myArticle.appendChild(myPara5); 
 
             var schedule = temples[i].events;
