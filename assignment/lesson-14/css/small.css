@@ -7,7 +7,7 @@ header {
     text-align: center;
     font-size: 25px;
     font-family: 'marcellus', 'cyrsive', 'Lucida Sans';
-    background-color: #193207;
+    background-color: #0f100e;
     color: white;
     margin: auto;
     padding: 1px;
@@ -28,7 +28,7 @@ header {
         margin: 10px;
     }
 
-    nav { margin: 0 auto; max-width: 1000px; background-color: #c0c7bb; }
+    nav { margin: 0 auto; max-width: 1000px; background-color: #d1d7cc; }
 
     .navigation { list-style: none; text-align: center; }
     .navigation li:first-child {display: flex;}
@@ -41,31 +41,41 @@ header {
 
 .navigation {
     margin: 0;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    list-style: none;
+    text-align: center;
 }
+.story { /*Home page Ft. Collins*/
+    color:white;
+    text-align: center;
+    margin: 0px;
+    max-width: 1000px;
+    background-color: #9ba890;
+    padding: 10px;
+    }
 .info {/* section with temple info home page*/
     display: flex;
     flex-direction: row;
-    background-color:#818f77;
+    background-color:#50574a;
     margin-bottom: 0;
     padding: 0;
     font-size: 20px;
 }
 #ftcol{ /*ft. collins temple image*/
-    height: 15em;
+    height: 35em;
+    width: 30em;
     margin: 20px;
+    box-shadow: 0 0 30px #0f100e;
+    
 } 
-.story { /*Home page Ft. Collins*/
-    color:white;
-    text-align: left;
-    margin: 0px;
-    max-width: 1000px;
-    background-color: aquamarine
-    }
+
 footer {
     text-align: center;
     font-size: 25px;
     font-family: 'marcellus', 'cyrsive', 'Lucida Sans';
-    background-color: #276b7d;
+    background-color: #0f100e;
     color: white;
     margin: auto;
     max-width: 1000px;
