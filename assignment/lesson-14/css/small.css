@@ -46,28 +46,37 @@ header {
     justify-content: space-evenly;
     list-style: none;
     text-align: center;
+    
 }
+
 .story { /*Home page Ft. Collins*/
+    display: grid;
     color:white;
     text-align: center;
-    margin: 0px;
+    margin: auto;
     max-width: 1000px;
     background-color: #9ba890;
-    padding: 10px;
+    }
+    .info h2 {
+        font-size: 40px;
+        text-align: center;
     }
 .info {/* section with temple info home page*/
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     background-color:#50574a;
     margin-bottom: 0;
     padding: 0;
     font-size: 20px;
+    color: white;
+    list-style: none;
 }
 #ftcol{ /*ft. collins temple image*/
     height: 35em;
     width: 30em;
-    margin: 20px;
+    margin: auto;
     box-shadow: 0 0 30px #0f100e;
+    align-content: center;
     
 } 
 
@@ -79,6 +88,7 @@ footer {
     color: white;
     margin: auto;
     max-width: 1000px;
+    padding: .1em;
 }
 .free { /* information above the footer*/
     display: flex;
