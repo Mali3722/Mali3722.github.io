@@ -1,5 +1,5 @@
 var section = document.querySelector('section');
-var request = "temple.json";
+var requestURL = "https://github.com/Mali3722/Mali3722.github.io/blob/master/assignment/lesson-14/script/temple.json";
 var request = new XMLHttpRequest();
 request.open('GET', requestURL);
 request.responseType = 'json';
