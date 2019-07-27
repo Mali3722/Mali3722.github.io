@@ -19,3 +19,6 @@
         justify-content: center;
         max-width: 1000px;  
     }
+    #marriage {
+        max-width: 100%;
+    }

@@ -99,10 +99,12 @@ footer {
 .free { /* information above the footer*/
     display: flex;
     flex-direction: column;
-    background-color: #a9cecf;
+    background-color: #9ba890;
     text-align: left;
     max-width: 1000px;
-}
+    margin: 1em;
+    color: black;
+   }
 fieldset {
     display: flex;
     flex-direction: column;
@@ -145,24 +147,21 @@ label {
     flex-basis: 100%;
     flex: 1;
   }
-.main {
+/*.main {
     height: 100px;
     background-color: #ffd203;
     padding-left: 30px;
-   }
-   .#subject {
-    height: 40px;
-}
+   }*/
 .map {
     display: flex;
     flex-direction: column;
 }  
 .party {
     display: flex;
-    flex-direction: row-reverse;
+    flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #3fbdee;
+    background-color: #9ba890;
     margin-bottom: 0;
     padding: 1em;
     font-size: 20px;
@@ -236,3 +235,20 @@ label {
     text-align: center;
     list-style: none;
 }  
+.svpg {
+    background-color: #9ba890;
+}
+.swim {
+    float: right;
+    padding-bottom: 15em;
+    padding-right: 5em;
+    margin-left: 5em;
+}
+a {
+    color: white;
+}
+#marriage {
+    height: 200px;
+    
+    
+}
