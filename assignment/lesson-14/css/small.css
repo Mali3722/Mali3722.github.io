@@ -18,6 +18,7 @@ main {
     max-width: 1000px;
     margin-left: auto;
     margin-right: auto;
+    padding: .1em;
 }
     .topcontainer { /*title and logo*/ 
         display: flex;
@@ -62,9 +63,9 @@ main {
     max-width: 1000px;
     background-color: #9ba890;
     }
-    .info h2 {
-        font-size: 40px;
-        text-align: center;
+ .info h2 {
+    font-size: 40px;
+    text-align: center;
     }
 .info {/* section with temple info home page*/
     display: flex;
@@ -78,7 +79,7 @@ main {
 }
 #ftcol{ /*ft. collins temple image*/
     height: 35em;
-    width: 30em;
+    width: 100%;
     margin: auto;
     box-shadow: 0 0 30px #0f100e;
     align-content: center;
@@ -149,7 +150,7 @@ label {
     background-color: #ffd203;
     padding-left: 30px;
    }
-#subject {
+   .#subject {
     height: 40px;
 }
 .map {
@@ -167,37 +168,36 @@ label {
     font-size: 20px;
     }
 
-    #marriage {
-        height: 10em;
-        margin: 10px;
+#marriage {
+    height: 10em;
+    margin: 10px;
     }
-    .reception  { 
-        color:white;
-        text-align: justify;
-        margin: 0px;
-        max-width: 1000px;
-        }
-        .senior {
-            display: flex;
-            flex-direction: row-reverse;
-            align-items: center;
-            justify-content: center;
-            background-color: #3fbdee;
-            margin-bottom: 0;
-            padding: 1em;
-            font-size: 20px;
-            }
+.reception  { 
+    text-align: justify;
+    margin: 0px;
+    max-width: 1000px;
+    }
+.senior {
+    display: flex;
+    flex-direction: row-reverse;
+    align-items: center;
+    justify-content: center;
+    background-color: #3fbdee;
+    margin-bottom: 0;
+    padding: 1em;
+    font-size: 20px;
+    }
         
-            #missionary {
-                height: 10em;
-                margin: 10px;
-            }
-            .mstay  { 
-                color:white;
-                text-align: justify;
-                margin: 0px;
-                max-width: 1000px;
-                }
+#missionary {
+    height: 10em;
+    margin: 10px;
+    }
+.mstay  { 
+    color:white;
+    text-align: justify;
+    margin: 0px;
+    max-width: 1000px;
+    }
 .welcome {
      position: relative;
      width: fit-content;
@@ -205,10 +205,34 @@ label {
      max-width: 1000px; 
      text-align: center;
      padding: 1px;
-     color: black;
-     background-color: white;
-    margin: auto;
+     color: white;
+     margin: auto;
+     font-size: 25px;
     }
 .welcomediv img{
     width: 100%
-                }
+    }
+ .container58 {
+    background-color: #50574a;
+    text-align: center;
+} 
+.box1 {
+      background-color: #50574a;
+      color: white;
+      font-size: 25px;
+      text-align: center;
+      list-style: none;
+  }  
+   .ftsz {
+      list-style: none;
+      font-size: 20px;
+  }
+  .tb {
+      background-color: #50574a;
+  }
+  .box10 {
+    color: #50574a;
+    font-size: 15px;
+    text-align: center;
+    list-style: none;
+}  
